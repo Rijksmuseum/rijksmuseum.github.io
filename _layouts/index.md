@@ -1,3 +1,7 @@
+---
+layout: index
+---
+
 Met behulp van de Rijksmuseum API kunnen metadata en afbeeldingen gebruikt worden om apps of webtoepassingen te ontwikkelen of voor verrijking van je eigen collectie.
 
 ### Parameters
