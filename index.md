@@ -2,10 +2,22 @@
 layout: index
 ---
 
-Met behulp van de Rijksmuseum API kunnen metadata en afbeeldingen gebruikt worden om apps of webtoepassingen te ontwikkelen of voor verrijking van je eigen collectie.
+For live code examples demonstrating the use of the Rijksmuseum API please checkout the [demo's page](demos).
+
+## The Rijksmuseum API
+
+The live website API (which has a live link to the website platform) makes the full power of the award-winning Rijksmuseum website directly accessible to a large group of developers. Searching the collection is one activity that offers a wide range of interesting options. The same is true of the “explore the collection” pages, the Rijksstudio users’ collections, and the tiled images used to zoom in to tight close-ups of works of art. Calendar information is also available, for example. 
+The JSON-based service is so simple that, in no time at all, you can build something that makes use of the Rijksmuseum’s rich and attractive content.
+
+## Access to the API
+You will first need to request an API key, to access the data and images. You can do this via the advanced settings of your Rijksstudio account (www.rijksmuseum.nl/rijksstudio). You will then immediately be given a code. You will need this code to use the APIs. 
+
+## Documentations
+Below you find the documentation for the live website API.
 
 ### Parameters
-Uiteraard verschillen de opties per endpoint, maar bij ieder request zijn de volgende parameters beschikbaar:
+Each API endpoints varies a bit in the options available.
+In general for each API request you can make use of the following parameters:
 
 <table>
   <thead>
@@ -21,13 +33,13 @@ Uiteraard verschillen de opties per endpoint, maar bij ieder request zijn de vol
       <td><code>key</code></td>
       <td><code>a-z|0-9</code></td>
       <td></td>
-      <td>Verplicht bij ieder request.</td>
+      <td>Mandatory for every request.</td>
     </tr>
     <tr>
       <td><code>format</code></td>
-      <td><code>xml</code> / <code>json</code></td>
+      <td><code>xml</code> / <code>json</code> / <code>jsonp</code></td>
       <td><code>xml</code></td>
-      <td>Het formaat van het resultaat.</td>
+      <td>Het format of the result.</td>
     </tr>
   </tbody>
 </table>
