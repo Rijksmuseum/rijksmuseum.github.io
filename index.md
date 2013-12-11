@@ -12,7 +12,7 @@ The JSON-based service is so simple that, in no time at all, you can build somet
 ## Access to the API
 You will first need to request an API key, to access the data and images. You can do this via the advanced settings of your Rijksstudio account (www.rijksmuseum.nl/rijksstudio). You will then immediately be given a code. You will need this code to use the APIs. 
 
-## Documentations
+## Documentation
 Below you find the documentation for the live website API.
 
 ### Parameters
@@ -39,40 +39,42 @@ In general for each API request you can make use of the following parameters:
       <td><code>format</code></td>
       <td><code>xml</code> / <code>json</code> / <code>jsonp</code></td>
       <td><code>xml</code></td>
-      <td>Het format of the result.</td>
+      <td>The format of the result.</td>
     </tr>
   </tbody>
 </table>
 
 ### Culture
-De meeste endpoints zijn taal-afhankelijk. Gebruik een van de volgende taalcodes:
+Most of the endpoints are language dependent. Use one of the following language codes:
 
-- `nl` : Nederlands  
-- `en` : Engels  
+- `nl` : Dutch  
+- `en` : English  
 
-### Voorbeeld request
-Het volgende request zal bijvoorbeeld alle publieke data van de nachtwacht teruggeven, in het Nederlands en JSON-formaat:
+### Example request
+The following request will fetch all of the public data of The Nightwatch, in Dutch using the format JSON:
 
 ```
 https://www.rijksmuseum.nl/api/nl/collection/sk-c-5?key=fakekey&format=json
 ```
 
-### Overige opmerkingen
-- Een datum in een response is altijd UTC  
-- Een API-key is aan te vragen onder "Geavanceerde instellingen" in de Rijksstudio-instellingen
+### Remarks
+- Dates in a response is always UTC
+- You can request the API-key via the advanced settings in your Rijksstudio account.
+
 
 -----------------------------------------
 
 ## Endpoints
-We stellen data van de volgende onderdelen beschikbaar:
+There are API's available for the following elements:
 
-- **Collectie:** De gehele kunstcollectie met alle publieke data  
-- **Content-pagina's:** Statische pagina's met informatie  
-- **Usersets:** Verzamelingen van gebruikers  
-- **Agenda:** Tentoonstellingen, rondleiding, etc  
+- **Collection:** The complete online collection of the Rijksmuseum with all public data.  
+- **Content pages:** Static pages as used on the website. 
+- **Usersets:** Sets from Rijksstudio users. 
+- **Calendar:** Calendar and availability of expositions, tours, etc. 
 
-## Collectie
-`GET /api/[culture]/collection` geeft de volledige collectie, met beknopte informatie per werk. Deze resultaten zijn opgesplitst in pagina's, dus dmv de `p` en `ps` parameters kunnen meer resultaten getoond worden. De overige parameters zijn identiek aan de [zoekpagina](https://www.rijksmuseum.nl/nl/zoeken?f=1&p=1&ps=12) op de reguliere website, wat handig kan zijn om de juiste query op te bouwen.
+## Collection
+`GET /api/[culture]/collection` gives the full collection with brief information about each work. This results are split up in result pages. By using the `p` and `ps` parameters you can fetch more results. All of the other parameters are identical to the [search page](https://www.rijksmuseum.nl/nl/zoeken) on the Rijksmuseum website. You can use that to find out what's the best query to use.
+
 
 <table>
   <thead>
