@@ -213,7 +213,7 @@ https://www.rijksmuseum.nl/api/nl/collection?key=fakekey&format=json&type=schild
 ```
 
 ### Response
-```
+{% highlight javascript %}
 {
   "elapsedMilliseconds": 164,
   "count": 359,
@@ -252,8 +252,7 @@ https://www.rijksmuseum.nl/api/nl/collection?key=fakekey&format=json&type=schild
     // more results...
   ]
 }
-```
-
+{% endhighlight %}
 
 
 ## Collectie details
@@ -287,7 +286,7 @@ https://www.rijksmuseum.nl/api/nl/collection/sk-c-5?key=fakekey&format=json
 ```
 
 ### Response
-```
+{% highlight javascript %}
 {
   "elapsedMilliseconds": 27,
   "artObject": {
@@ -517,8 +516,7 @@ https://www.rijksmuseum.nl/api/nl/collection/sk-c-5?key=fakekey&format=json
     }
   }
 }
-```
-
+{% endhighlight %}
 
 
 ## Collectie beeldmateriaal
@@ -547,7 +545,7 @@ https://q42imageserver.appspot.com/api/getTilesInfo?object_id=SK-C-5
 ```
 
 ### Response
-```
+{% highlight javascript %}
 {
   "levels": [{
     "name": "z4",
@@ -658,7 +656,7 @@ https://q42imageserver.appspot.com/api/getTilesInfo?object_id=SK-C-5
     }]
   }]
 }
-```
+{% endhighlight %}
 
 Zoals je kunt zien wordt er een lijst aan `levels` gegeven. Deze levels hebben een aantal `tiles`, die samen een weergave van het volledige beeld vormen. Het kiezen van het juiste `level` kan door middel van de `width` en `height` (die de totale resolutie van dat `level` beschrijven), of door middel van de `name` (waarbij `z0` het grootst mogelijke beeld is en `z6` de kleinste is).  
 
@@ -697,7 +695,7 @@ https://www.rijksmuseum.nl/api/pages/nl/ontdek-de-collectie/overzicht/rembrandt-
 ```
  
 ### Response
-```
+{% highlight javascript %}
 {
   "elapsedMilliseconds": 15,
   "contentPage": {
@@ -804,7 +802,7 @@ https://www.rijksmuseum.nl/api/pages/nl/ontdek-de-collectie/overzicht/rembrandt-
   },
   "similarPages": null
 }
-```
+{% endhighlight %}
 
 
 
@@ -842,7 +840,7 @@ https://www.rijksmuseum.nl/api/usersets?key=fakekey&format=json&page=2
 ```
 
 ### Response
-```
+{% highlight javascript %}
 {
   "count": 97957,
   "elapsedMilliseconds": 631,
@@ -872,7 +870,7 @@ https://www.rijksmuseum.nl/api/usersets?key=fakekey&format=json&page=2
     // more results...
   ]
 }
-```
+{% endhighlight %}
 
 
 
@@ -907,7 +905,7 @@ https://www.rijksmuseum.nl/api/usersets/123-setname-3?key=fakekey&format=json
 ```
 
 ### Response
-```
+{% highlight javascript %}
 {
   "elapsedMilliseconds": 505,
   "userSet": {
@@ -964,7 +962,8 @@ https://www.rijksmuseum.nl/api/usersets/123-setname-3?key=fakekey&format=json
     "updatedOn": "2013-04-10T10:50:21.7559145Z"
   }
 }
-```
+{% endhighlight %}
+
 
 
 
@@ -999,7 +998,7 @@ https://www.rijksmuseum.nl/api/nl/agenda/2013-10-18?key=fakekey&format=json
 ```
 
 ### Response
-```
+{% highlight javascript %}
 {
   "elapsedMilliseconds": 296,
   "options": [
@@ -1050,7 +1049,7 @@ https://www.rijksmuseum.nl/api/nl/agenda/2013-10-18?key=fakekey&format=json
     // more results...
   ]
 }
-```
+{% endhighlight %}
 
 
 
@@ -1095,10 +1094,10 @@ https://www.rijksmuseum.nl/api/nl/agenda/2013-10-18/expostition/0ee170d3-9604-48
 ```
 
 ### Response
-```
+{% highlight javascript %}
 {
   "elapsedMilliseconds": 155,
   "total": 15,
   "available": 11
 }
-```
+{% endhighlight %}
