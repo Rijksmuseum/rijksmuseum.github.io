@@ -213,7 +213,7 @@ https://www.rijksmuseum.nl/api/nl/collection?key=fakekey&format=json&type=schild
 ```
 
 ### Response
-{% highlight javascript %}
+{% highlight json %}
 {
   "elapsedMilliseconds": 164,
   "count": 359,

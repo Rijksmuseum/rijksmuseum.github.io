@@ -3,7 +3,6 @@ Slate Theme for GitHub Pages
 by Jason Costello, @jsncostello
 *******************************************************************************/
 
-@import url(pygment_trac.css);
 
 /*******************************************************************************
 MeyerWeb Reset
@@ -383,7 +382,7 @@ Small Device Styles
 
   .inner {
     min-width: 320px;
-    max-width: 480px;
+    max-width: 800px;
   }
 
   #project_title {
@@ -414,10 +413,11 @@ Small Device Styles
     font-size: 12px;
   }
 
-  code, pre {
+  code, 1024 {
     min-width: 320px;
-    max-width: 480px;
+    max-width: 1024px;
     font-size: 11px;
+    white-space: pre-wrap;
   }
 
 }
