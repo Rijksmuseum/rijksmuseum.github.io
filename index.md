@@ -90,133 +90,109 @@ There are API's available for the following elements:
       <td><code>culture</code></td>
       <td><code>nl</code> / <code>en</code></td>
       <td></td>
-      <td>De taal waarop gezocht moet worden (en van de bijbehorende resultaten)</td>
+      <td>The language to search in (and of the results)</td>
     </tr>
     <tr>
       <td><code>p</code></td>
       <td><code>0-n</code></td>
       <td><code>0</code></td>
-      <td>De pagina binnen alle resultaten</td>
+      <td>The result page</td>
     </tr>
     <tr>
       <td><code>ps</code></td>
       <td><code>1-100</code></td>
       <td><code>10</code></td>
-      <td>Het aantal resultaten per pagina</td>
+      <td>The number of results per page/td>
     </tr>
     <tr>
       <td><code>q</code></td>
       <td><code>a-z</code></td>
       <td></td>
-      <td>Trefwoord moet in een van de tekstuele velden voorkomen</td>
+      <td>The search terms that need to occur in one of the fields of the artwork data </td>
     </tr>
     <tr>
       <td><code>maker</code></td>
       <td><code>a-z</code></td>
       <td></td>
-      <td>Werken moeten deze vervaardiger hebben</td>
+      <td>Works need to be made by this artist.</td>
     </tr>
     <tr>
       <td><code>type</code></td>
       <td><code>a-z</code></td>
       <td></td>
-      <td>Werken moeten dit type hebben</td>
+      <td>The type of the art work.</td>
     </tr>
     <tr>
       <td><code>material</code></td>
       <td><code>a-z</code></td>
       <td></td>
-      <td>Werken moeten van dit materiaal gemaakt zijn</td>
+      <td>The material of the art work</td>
     </tr>
     <tr>
       <td><code>technique</code></td>
       <td><code>a-z</code></td>
       <td></td>
-      <td>Werken moeten met deze techniek gemaakt zijn</td>
+      <td>The technique used to make the works</td>
     </tr>
     <tr>
       <td><code>f.dating.period</code></td>
       <td><code>0-21</code></td>
       <td></td>
-      <td>Werken moeten uit deze eeuw komen</td>
+      <td>The century in which the work is made</td>
     </tr>
     <tr>
       <td><code>f.normalized32Colors.hex</code></td>
       <td><code>Color HEX</code></td>
       <td></td>
-      <td>Werken moeten deze kleuren bevatten (let op: de # in #FF0000 moet url-encoded zijn!)</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td><code>-1</code></td>
-      <td></td>
-      <td>Werken moeten ouder dan het jaar 0 zijn</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td><code>-2</code></td>
-      <td></td>
-      <td>Werken moeten uit een onbekend jaartal komen</td>
-    </tr>
+      <td>Colors found in the images (mind: The `#` in #FF0000 should be url-encoded!)</td>
+    </tr>  
     <tr>
       <td><code>imgonly</code></td>
       <td><code>True</code></td>
       <td><code>False</code></td>
-      <td>Werken moeten een afbeelding hebben</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td><code>False</code></td>
-      <td></td>
-      <td>Werken hoeven geen afbeelding te hebben</td>
+      <td>Only give resuls for which an image is available or not</td>
     </tr>
     <tr>
       <td><code>toppieces</code></td>
       <td><code>True</code></td>
       <td><code>False</code></td>
-      <td>Werken moeten een topstuk zijn</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td><code>False</code></td>
-      <td></td>
-      <td>Werken hoeven geen topstuk te zijn</td>
+      <td>Only give works that are top pieces</td>
     </tr>
     <tr>
       <td><code>s</code></td>
       <td><code>relevance</code></td>
       <td></td>
-      <td>Sorteer gevonden werken op relevantie</td>
+      <td>Sort results on relevance</td>
     </tr>
     <tr>
       <td></td>
       <td><code>objecttype</code></td>
       <td></td>
-      <td>Sorteer gevonden werken op type</td>
+      <td>Sort results on type</td>
     </tr>
     <tr>
       <td></td>
       <td><code>chronologic</code></td>
       <td></td>
-      <td>Sorteer gevonden werken op jaartal (oudste eerst)</td>
+      <td>Sort results chronologically (oldest first)</td>
     </tr>
     <tr>
       <td></td>
       <td><code>achronologic</code></td>
       <td></td>
-      <td>Sorteer gevonden werken op jaartal (nieuwste eerst)</td>
+      <td>Sort results chronologically (newest first)</td>
     </tr>
     <tr>
       <td></td>
       <td><code>artist</code></td>
       <td></td>
-      <td>Sorteer gevonden werken op artiest (a-z)</td>
+      <td>Sort results on artist (a-z)</td>
     </tr>
     <tr>
       <td></td>
       <td><code>artistdesc</code></td>
       <td></td>
-      <td>Sorteer gevonden werken op artiest (z-a)</td>
+      <td>Sort results on artist (z-a)</td>
     </tr>
   </tbody>
 </table>
@@ -269,8 +245,9 @@ https://www.rijksmuseum.nl/api/nl/collection?key=fakekey&format=json&type=schild
 {% endhighlight %}
 
 
-## Collectie details
-`GET /api/[culture]/collection/[object-number]` geeft meer details van een werk. Het object-number kan in /api/[culture]/collection gevonden worden.
+## Collection details
+`GET /api/[culture]/collection/[object-number]` gives more details of a work. The object number can be found in the results given in /api/[culture]/collection.
+
 
 <table>
   <thead>
@@ -284,12 +261,12 @@ https://www.rijksmuseum.nl/api/nl/collection?key=fakekey&format=json&type=schild
     <tr>
       <td><code>culture</code></td>
       <td><code>nl</code> / <code>en</code></td>
-      <td>De taal van het collectie-item</td>
+      <td>De language to give the results in</td>
     </tr>
     <tr>
       <td><code>object-number</code></td>
       <td><code>a-z|0-9|-</code></td>
-      <td>Het ID van het collectie-item</td>
+      <td>Het identifier of the work</td>
     </tr>
   </tbody>
 </table>
@@ -533,8 +510,10 @@ https://www.rijksmuseum.nl/api/nl/collection/sk-c-5?key=fakekey&format=json
 {% endhighlight %}
 
 
-## Collectie beeldmateriaal
-`GET https://q42imageserver.appspot.com/api/getTilesInfo?object_id=[object-number]` geeft alle informatie om het hoofdbeeld van een werk in tiles in te laden. Hiermee is de zoom-functionaliteit op de object-pagina bijvoorbeeld ook gemaakt, die alleen de nodige onderdelen en resolutie van het werk gebruikt.
+## Collection images
+
+`GET https://rijksmuseum.nl/api/nl/collection/[object-number]/tiles?key=fakekey&format=jsonp` gives all the information you can use to show the image split up in tiles. This is used to implement the zoom functionality on the Rijksmuseum website.
+This API only supports the JSONP format.
 
 <table>
   <thead>
@@ -548,14 +527,14 @@ https://www.rijksmuseum.nl/api/nl/collection/sk-c-5?key=fakekey&format=json
     <tr>
       <td><code>object-number</code></td>
       <td><code>a-z|0-9|-</code></td>
-      <td>Het ID van het collectie-item (case-sensitive)</td>
+      <td>The identifier of the work (case-sensitive)</td>
     </tr>
   </tbody>
 </table>
 
 ### Request
 ```
-https://q42imageserver.appspot.com/api/getTilesInfo?object_id=SK-C-5
+https://rijksmuseum.nl/api/nl/collection/SK-C-5/tiles?key=fakekey&format=jsonp
 ```
 
 ### Response
@@ -672,14 +651,15 @@ https://q42imageserver.appspot.com/api/getTilesInfo?object_id=SK-C-5
 }
 {% endhighlight %}
 
-Zoals je kunt zien wordt er een lijst aan `levels` gegeven. Deze levels hebben een aantal `tiles`, die samen een weergave van het volledige beeld vormen. Het kiezen van het juiste `level` kan door middel van de `width` en `height` (die de totale resolutie van dat `level` beschrijven), of door middel van de `name` (waarbij `z0` het grootst mogelijke beeld is en `z6` de kleinste is).  
+As you can see, this api returns a list of `levels`. These levels have a number of `tiles`. The tiles form the full image. You can choose the right level by using the width and height. They describe the total resolution of the chosen level. You can also select a level by name. Level `z0` contains the largest available image and `z6` the smallest.
 
-Zodra het juiste `level` is gekozen kan het beeld door middel van de `tiles` gereconstrueerd worden. Hierbij beschrijven `x` de horizontale en `y` de verticale positie, en kan het daadwerkelijke beeld gevonden worden op de locatie van `url`.
+When you have chosen a level you can construct the image by positioning the tiles. X and Y describe the horizontal and vertical position of the image.
+
+See the [demo's page](demos) for an example.
 
 
-
-## Content pagina's
-`GET /api/pages/[culture]/[slug]` geeft alle publieke data van een content-pagina.
+## Content pages
+`GET /api/pages/[culture]/[slug]` returns all public data of a content page as found on the website.
 
 <table>
   <thead>
@@ -693,12 +673,13 @@ Zodra het juiste `level` is gekozen kan het beeld door middel van de `tiles` ger
     <tr>
       <td><code>culture</code></td>
       <td><code>nl</code> / <code>en</code></td>
-      <td>De taal van de pagina</td>
+      <td>The language of the page</td>
     </tr>
     <tr>
       <td><code>slug</code></td>
       <td><code>a-z|0-9|-/</code></td>
-      <td>Slug die de pagina identificeert. Deze kan uit de url van de website gehaald kan worden. Voor de <a href="https://www.rijksmuseum.nl/nl/ontdek-de-collectie">ontdek-de-collectie-pagina</a> wordt dit bijvoorbeeld: <code>ontdek-de-collectie</code></td>
+      <td>The slug that identifies teh page. You can find this in the url of the page itself. For the <a href="https://www.rijksmuseum.nl/en/explore-the-collection">explore the collection page</a> this is: <code>explore-the-collection</code>.
+    </td>
     </tr>
   </tbody>
 </table>
@@ -821,7 +802,7 @@ https://www.rijksmuseum.nl/api/pages/nl/ontdek-de-collectie/overzicht/rembrandt-
 
 
 ## Usersets
-`GET /api/usersets` geeft de verzamelingen van gebruikers. Deze resultaten zijn opgesplitst in pagina's, dus dmv onderstaande parameters kunnen meer resultaten getoond worden.
+`GET /api/usersets` shows the sets made by Rijksstudio users. The following parameters are supported:
 
 <table>
   <thead>
@@ -837,13 +818,13 @@ https://www.rijksmuseum.nl/api/pages/nl/ontdek-de-collectie/overzicht/rembrandt-
       <td><code>page</code></td>
       <td><code>0-n</code></td>
       <td><code>0</code></td>
-      <td>De pagina binnen alle resultaten</td>
+      <td>The result page to fetch</td>
     </tr>
     <tr>
       <td><code>pageSize</code></td>
       <td><code>1-100</code></td>
       <td><code>10</code></td>
-      <td>Het aantal resultaten per pagina</td>
+      <td>The number of results per page</td>
     </tr>
   </tbody>
 </table>
@@ -889,7 +870,7 @@ https://www.rijksmuseum.nl/api/usersets?key=fakekey&format=json&page=2
 
 
 ## Userset details
-`GET /api/usersets/[id]` geeft meer details van een userset. Het ID kan in /api/usersets gevonden worden. 
+`GET /api/usersets/[id]` gives more details of a set. You can find the details in /api/usersets.
 
 <table>
   <thead>
@@ -903,12 +884,12 @@ https://www.rijksmuseum.nl/api/usersets?key=fakekey&format=json&page=2
     <tr>
       <td><code>culture</code></td>
       <td><code>nl</code> / <code>en</code></td>
-      <td>De taal van de userset</td>
+      <td>The language of the set</td>
     </tr>
     <tr>
       <td><code>id</code></td>
       <td><code>0-9</code></td>
-      <td>Het ID van de userset</td>
+      <td>The ID of the set</td>
     </tr>
   </tbody>
 </table>
@@ -981,8 +962,8 @@ https://www.rijksmuseum.nl/api/usersets/123-setname-3?key=fakekey&format=json
 
 
 
-## Agenda
-`GET /api/[culture]/agenda/[date]` geeft alle agenda-items, zoals tentoonstellingen en rondleidingen, voor de opgegeven datum. 
+## Events calendar
+`GET /api/[culture]/agenda/[date]` shows all events for the given date. 
 
 <table>
   <thead>
@@ -996,12 +977,12 @@ https://www.rijksmuseum.nl/api/usersets/123-setname-3?key=fakekey&format=json
     <tr>
       <td><code>culture</code></td>
       <td><code>nl</code> / <code>en</code></td>
-      <td>De taal van de agenda-items</td>
+      <td>The language of the events.</td>
     </tr>
     <tr>
       <td><code>date</code></td>
       <td><code>yyyy-mm-dd</code></td>
-      <td>De datum van de agenda-items</td>
+      <td>The date for which to fetch the events</td>
     </tr>
   </tbody>
 </table>
@@ -1067,8 +1048,8 @@ https://www.rijksmuseum.nl/api/nl/agenda/2013-10-18?key=fakekey&format=json
 
 
 
-## Agenda details
-`GET /api/[culture]/agenda/[date]/exposition/[exposition-id]/availability/[period-id]` geeft meer details van bij agenda-items horende expositie. De benodigde ID's kunnen gevonden worden in /api/[culture]/agenda/[date].
+## Calendar event availability
+`GET /api/[culture]/agenda/[date]/exposition/[exposition-id]/availability/[period-id]` gives the availability details for a specific event. The ID's of the events are found in the Events API.
 
 <table>
   <thead>
@@ -1082,22 +1063,22 @@ https://www.rijksmuseum.nl/api/nl/agenda/2013-10-18?key=fakekey&format=json
     <tr>
       <td><code>culture</code></td>
       <td><code>nl</code> / <code>en</code></td>
-      <td>De taal van de agenda-items</td>
+      <td>The language</td>
     </tr>
     <tr>
       <td><code>date</code></td>
       <td><code>yyyy-mm-dd</code></td>
-      <td>De datum van de agenda-items</td>
+      <td>The date of the event</td>
     </tr>
     <tr>
       <td><code>exposition-id</code></td>
       <td><code>a-z|0-9</code></td>
-      <td>De id van betreffende expositie</td>
+      <td>The ID of the event. (all events are expositions)</td>
     </tr>
     <tr>
       <td><code>period-id</code></td>
       <td><code>a-z|0-9</code></td>
-      <td>De id van betreffende periode</td>
+      <td>The ID of the period</td>
     </tr>
   </tbody>
 </table>
