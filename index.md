@@ -2,7 +2,11 @@
 layout: index
 ---
 
-For live code examples demonstrating the use of the Rijksmuseum API please checkout the [demo's page](demos).
+For more information about the Rijksmuseum API, please read [www.rijksmuseum.nl/en/api](https://www.rijksmuseum.nl/en/api).
+
+For live code examples demonstrating the use of the Rijksmuseum API, please checkout the [demo's page](demos).
+
+The use of the Rijksmuseum API have these [terms and conditions](https://www.rijksmuseum.nl/en/api/terms-and-conditions-of-use).
 
 ## The Rijksmuseum API
 
@@ -10,7 +14,7 @@ The live website API (which has a live link to the website platform) makes the f
 The JSON-based service is so simple that, in no time at all, you can build something that makes use of the Rijksmuseum’s rich and attractive content.
 
 ## Access to the API
-You will first need to request an API key, to access the data and images. You can do this via the advanced settings of your Rijksstudio account (www.rijksmuseum.nl/rijksstudio). You will then immediately be given a code. You will need this code to use the APIs. 
+You will first need to request an API key, to access the data and images. You can do this via the advanced settings of your [Rijksstudio account](https://www.rijksmuseum.nl/nl/mijn/gegevens). You will then immediately be given a code. You will need this code to use the APIs. 
 
 ## Documentation
 Below you find the documentation for the live website API.
