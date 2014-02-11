@@ -106,7 +106,7 @@ There are API's available for the following elements:
       <td><code>ps</code></td>
       <td><code>1-100</code></td>
       <td><code>10</code></td>
-      <td>The number of results per page/td>
+      <td>The number of results per page</td>
     </tr>
     <tr>
       <td><code>q</code></td>
@@ -682,7 +682,7 @@ See the [demo's page](demos) for an example.
     <tr>
       <td><code>slug</code></td>
       <td><code>a-z|0-9|-/</code></td>
-      <td>The slug that identifies teh page. You can find this in the url of the page itself. For the <a href="https://www.rijksmuseum.nl/en/explore-the-collection">explore the collection page</a> this is: <code>explore-the-collection</code>.
+      <td>The slug that identifies the page. You can find this in the url of the page itself. For the <a href="https://www.rijksmuseum.nl/en/explore-the-collection">explore the collection page</a> this is: <code>explore-the-collection</code>.
     </td>
     </tr>
   </tbody>
