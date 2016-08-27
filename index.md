@@ -115,7 +115,7 @@ There are API's available for the following elements:
       <td>The search terms that need to occur in one of the fields of the artwork data </td>
     </tr>
     <tr>
-      <td><code>maker</code></td>
+      <td><code>involvedMaker</code></td>
       <td><code>a-z</code></td>
       <td></td>
       <td>Works need to be made by this artist.</td>
