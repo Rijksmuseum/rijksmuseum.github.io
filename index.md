@@ -412,7 +412,7 @@ https://www.rijksmuseum.nl/api/nl/collection/sk-c-5?key=fakekey&format=json
     "dating": {
       "presentingDate": "ca. 1642",
       "sortingDate": 1642,
-      "period": 17,
+      "period": 17
     },
     "classification": {
       "iconClassIdentifier": [
