@@ -410,13 +410,8 @@ https://www.rijksmuseum.nl/api/nl/collection/sk-c-5?key=fakekey&format=json
     "techniques": [],
     "productionPlaces": [],
     "dating": {
-      "early": null,
-      "earlyPrecision": null,
-      "late": null,
-      "latePrecision": null,
-      "year": 1642,
-      "yearEarly": 1642,
-      "yearLate": 1642,
+      "presentingDate": "ca. 1642",
+      "sortingDate": 1642,
       "period": 17
     },
     "classification": {
