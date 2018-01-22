@@ -100,13 +100,13 @@ There are API's available for the following elements:
       <td><code>p</code></td>
       <td><code>0-n</code></td>
       <td><code>0</code></td>
-      <td>The result page</td>
+      <td>The result page. Note that <code>p * ps</code> cannot exceed 10.000.</td>
     </tr>
     <tr>
       <td><code>ps</code></td>
       <td><code>1-100</code></td>
       <td><code>10</code></td>
-      <td>The number of results per page. Note that <code>p * ps</code> cannot exceed 10.000.</td>
+      <td>The number of results per page</td>
     </tr>
     <tr>
       <td><code>q</code></td>
@@ -817,7 +817,7 @@ https://www.rijksmuseum.nl/api/pages/nl/ontdek-de-collectie/overzicht/rembrandt-
       <td><code>page</code></td>
       <td><code>0-n</code></td>
       <td><code>0</code></td>
-      <td>The result page to fetch</td>
+      <td>The result page to fetch. Note that <code>p * ps</code> cannot exceed 10.000.</td>
     </tr>
     <tr>
       <td><code>pageSize</code></td>
