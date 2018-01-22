@@ -106,7 +106,7 @@ There are API's available for the following elements:
       <td><code>ps</code></td>
       <td><code>1-100</code></td>
       <td><code>10</code></td>
-      <td>The number of results per page</td>
+      <td>The number of results per page. Note that <code>p * ps</code> cannot exceed 10.000.</td>
     </tr>
     <tr>
       <td><code>q</code></td>
