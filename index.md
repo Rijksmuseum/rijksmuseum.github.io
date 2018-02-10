@@ -511,7 +511,7 @@ https://www.rijksmuseum.nl/api/nl/collection/sk-c-5?key=fakekey&format=json
 
 ## Collection images
 
-`GET https://rijksmuseum.nl/api/nl/collection/[object-number]/tiles?key=fakekey&format=json` gives all the information you can use to show the image split up in tiles. This is used to implement the zoom functionality on the Rijksmuseum website.
+`GET https://www.rijksmuseum.nl/api/nl/collection/[object-number]/tiles?key=fakekey&format=json` gives all the information you can use to show the image split up in tiles. This is used to implement the zoom functionality on the Rijksmuseum website.
 This specific API only supports the JSON format.
 
 <table>
@@ -533,7 +533,7 @@ This specific API only supports the JSON format.
 
 ### Request
 ```
-https://rijksmuseum.nl/api/nl/collection/SK-C-5/tiles?key=fakekey&format=json
+https://www.rijksmuseum.nl/api/nl/collection/SK-C-5/tiles?key=fakekey&format=json
 ```
 
 ### Response
