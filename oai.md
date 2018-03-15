@@ -107,7 +107,7 @@ https://www.rijksmuseum.nl/api/oai/[API_KEY]?verb=ListRecords&set=subject:Entire
 Resumption tokens expire over time, which is why it is recommended to use a [script to harvest data](https://github.com/Q42/SimpleOAIHarvester).
 
 ### Response
-Each object description is included in the XML file as a record. The header includes an identifier and date stamp. The metadata element includes fields based on the metadata format definitions.
+Each object description is included in the XML file as a record. The header includes an identifier and date stamp. The metadata element includes fields based on the metadata format definitions, in this case [Dublin Core](http://dublincore.org):
 
 {% highlight xml %}
 <record>
@@ -139,7 +139,81 @@ Each object description is included in the XML file as a record. The header incl
 {% endhighlight %}
 
 ## GetRecord
-retrieve a specific record.
+`GET /oai/[API_KEY]?verb=GetRecord` retrieves an individual metadata record.
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Format</th>
+      <th>Default</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>identifier</code></td>
+      <td><code>a-z|0-9|:|-</code></td>
+      <td></td>
+      <td>Required: specifies the identifier of the object (e.g. oai:rijksmuseum.nl:sk-c-5)</td>
+    </tr>
+    <tr>
+      <td><code>metadataPrefix</code></td>
+      <td><code>oai_dc</code> / <code>europeana_edm</code> / <code>lido</code></td>
+      <td></td>
+      <td>Required: the metadata format of the result.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Request
+```
+https://www.rijksmuseum.nl/api/oai/[API_KEY]?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:rijksmuseum.nl:sk-c-5
+```
+
+This request will return the object description of the Nightwatch (SK-C-5).
+
+### Response
+An object description is included in the XML file as a record. The header includes an identifier and date stamp. The metadata element includes fields based on the metadata format definitions, in this case [Dublin Core](http://dublincore.org):
+
+{% highlight xml %}
+<record>
+    <header>
+        <identifier>oai:rijksmuseum.nl:sk-c-5</identifier>
+        <datestamp>2018-02-02T14:51:53Z</datestamp>
+    </header>
+    <metadata>
+        <oai:record>
+            <oai:header>
+                <oai:identifier>oai:rijksmuseum.nl/collection:SK-C-5</oai:identifier>
+                <oai:datestamp>2018-02-02T15:51:53Z</oai:datestamp>
+            </oai:header>
+            <oai:metadata>
+                <oai_dc:dc>
+                    <dc:format>http://lh3.googleusercontent.com/J-mxAE7CPu-DXIOx4QKBtb0GC4ud37da1QK7CzbTIDswmvZHXhLm4Tv2-1H3iBXJWAW_bHm7dMl3j5wv_XiWAg55VOM=s0</dc:format>
+                    <dc:identifier>http://hdl.handle.net/10934/RM0001.COLLECT.5216</dc:identifier>
+                    <dc:format>olieverf op doek</dc:format>
+                    <dc:identifier>SK-C-5</dc:identifier>
+                    <dc:language>Dutch</dc:language>
+                    <dc:publisher>Rijksmuseum</dc:publisher>
+                    <dc:rights>http://creativecommons.org/publicdomain/mark/1.0/</dc:rights>
+                    <dc:date>1642</dc:date>
+                    <dc:title>Officieren en andere schutters van wijk II in Amsterdam onder leiding van kapitein Frans Banninck Cocq en luitenant Willem van Ruytenburch, bekend als de ‘Nachtwacht’</dc:title>
+                    <dc:description>Het korporaalschap van kapitein Frans Banninck Cocq en luitenant Willem van Ruytenburch, bekend als de 'Nachtwacht'. Schutters van de kloveniersdoelen uit een poort naar buiten tredend. Op een schild aangebracht naast de poort staan de namen van de afgebeelde personen: Frans Banninck Cocq, heer van purmerlant en Ilpendam, Capiteijn Willem van Ruijtenburch van Vlaerdingen, heer van Vlaerdingen, Lu[ij]tenant, Jan Visscher Cornelisen Vaendrich, Rombout Kemp Sergeant, Reijnier Engelen Sergeant, Barent Harmansen, Jan Adriaensen Keyser, Elbert Willemsen, Jan Clasen Leydeckers, Jan Ockersen, Jan Pietersen bronchorst, Harman Iacobsen wormskerck, Jacob Dircksen de Roy, Jan vander heede, Walich Schellingwou, Jan brugman, Claes van Cruysbergen, Paulus Schoonhoven. De schutters zijn gewapend met lansen, musketten en hellebaarden. Rechts de tamboer met een grote trommel. Tussen de soldaten links staat een meisje met een dode kip om haar middel, rechts een blaffende hond. Linksboven de vaandrig met de uitgestoken vaandel.</dc:description>
+                    <dc:creator>schilder: Rijn, Rembrandt van</dc:creator>
+                    <dc:type>schilderij</dc:type>
+                    <dc:format>hoogte: 379,5 cm</dc:format>
+                    <dc:format>breedte: 453,5 cm</dc:format>
+                    <dc:format>gewicht: 337 kg, gewicht met lijst</dc:format>
+                    <dc:subject>Iconclasscode: 45(+26)</dc:subject>
+                    <dc:subject>Banning Cocq, Frans (ca. 1605 - 1655)</dc:subject>
+                    <dc:coverage>Amsterdam</dc:coverage>
+                </oai_dc:dc>
+            </oai:metadata>
+        </oai:record>
+    </metadata>
+</record>
+{% endhighlight %}
 
 ## ListMetadataFormats
 retrieve the available metadata formats.
