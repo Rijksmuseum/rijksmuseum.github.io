@@ -216,10 +216,73 @@ An object description is included in the XML file as a record. The header includ
 {% endhighlight %}
 
 ## ListMetadataFormats
-retrieve the available metadata formats.
+`GET /oai/[API_KEY]?verb=ListMetadataFormats` retrieves a list of the available metadata formats.
+
+### Request
+```
+https://www.rijksmuseum.nl/api/oai/[API_KEY]?verb=ListMetadataFormats
+```
+
+This request will return a list of available metadata formats.
+
+### Response
+Each metadata format element includes the prefix that can be used as a parameter in other requests, the schema and the name space.
+
+{% highlight xml %}
+<ListMetadataFormats>
+    <metadataFormat>
+        <metadataPrefix>oai_dc</metadataPrefix>
+        <schema>http://www.openarchives.org/OAI/2.0/oai_dc.xsd</schema>
+        <metadataNamespace>http://www.openarchives.org/OAI/2.0/</metadataNamespace>
+    </metadataFormat>
+    <metadataFormat>
+        <metadataPrefix>europeana_edm</metadataPrefix>
+        <schema>http://www.openarchives.org/OAI/2.0/oai_dc.xsd</schema>
+        <metadataNamespace>http://www.openarchives.org/OAI/2.0/</metadataNamespace>
+    </metadataFormat>
+    <metadataFormat>
+        <metadataPrefix>lido</metadataPrefix>
+        <schema>http://www.lido-schema.org/schema/v1.0/lido-v1.0.xsd</schema>
+        <metadataNamespace>http://www.lido-schema.org</metadataNamespace>
+    </metadataFormat>
+</ListMetadataFormats>
+{% endhighlight %}
+
 
 ## ListSets
-retrieve the available sets of objects.
+
+`GET /oai/[API_KEY]?verb=ListSets` retrieves the available sets of objects.
+
+### Request
+```
+https://www.rijksmuseum.nl/api/oai/[API_KEY]?verb=ListSets
+```
+
+This request will return a list of available sets of objects.
+
+### Response
+Each set includes a descriptive name and a set identifier that can be used as a parameter in other requests.
+
+{% highlight xml %}
+<ListSets>
+    <set>
+        <setSpec>subject:EntirePublicDomainSet</setSpec>
+        <setName>EntirePublicDomainSet</setName>
+    </set>
+    <set>
+        <setSpec>subject:OnDisplay</setSpec>
+        <setName>OnDisplay</setName>
+    </set>
+    <set>
+        <setSpec>subject:PublicDomainImages</setSpec>
+        <setName>PublicDomainImages</setName>
+    </set>
+    <set>
+        <setSpec>type:prints</setSpec>
+        <setName>Prints</setName>
+    </set>
+</ListSets>
+{% endhighlight %}
 
 ## ListIdentifiers
 retrieve headers with identifiers of objects.
