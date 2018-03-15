@@ -6,6 +6,6 @@ The live website API (which has a live link to the website platform) makes the f
 [Further details about the API on Github](http://rijksmuseum.github.io/)
 
 ###OAI API
-Since 2011, the Rijksmuseum also offers an API featuring the OAI-PMH protocol (Open Archives Initiative Protocol for Metadata Harvesting). In the cultural heritage sector, OAI-PMH is a standard that is used to support harvesting metadata of collections.
+Since 2011, the Rijksmuseum also offers an API featuring the [OAI-PMH protocol](https://www.openarchives.org/OAI/openarchivesprotocol.html) (Open Archives Initiative Protocol for Metadata Harvesting). In the cultural heritage sector, OAI-PMH is a standard that is used to support harvesting metadata of collections. The Rijksmuseum OAI-PMH API provides access to more than 600,000 descriptions of objects (metadata) and digital images from the Rijksmuseum collection.
 
 [Further details about the OAI API](http://rijksmuseum.github.io/oai)
