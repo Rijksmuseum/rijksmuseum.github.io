@@ -285,4 +285,66 @@ Each set includes a descriptive name and a set identifier that can be used as a 
 {% endhighlight %}
 
 ## ListIdentifiers
-retrieve headers with identifiers of objects.
+`GET /oai/[API_KEY]?verb=ListIdentifiers` retrieves headers with identifiers of objects. This verb is an abbreviated form of ListRecords, retrieving only headers rather than records.
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Format</th>
+      <th>Default</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>set</code></td>
+      <td><code>a-z|0-9|:</code></td>
+      <td>all objects</td>
+      <td>The set of objects to harvest.</td>
+    </tr>
+    <tr>
+      <td><code>metadataPrefix</code></td>
+      <td><code>oai_dc</code> / <code>europeana_edm</code> / <code>lido</code></td>
+      <td></td>
+      <td>Required: the metadata format of the result.</td>
+    </tr>
+    <tr>
+      <td><code>resumptionToken</code></td>
+      <td><code>a-z|0-9</code></td>
+      <td></td>
+      <td>The flow control token returned by a previous ListRecords request.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+### Request
+```
+https://www.rijksmuseum.nl/api/oai/[API_KEY]?verb=ListIdentifiers&set=subject:EntirePublicDomainSet&metadataPrefix=oai_dc
+```
+
+This request will return the first 100 headers in the dataset of all public domain objects. A `resumptionToken` element is included at the end, which can be used to return the next 100 headers in the dataset:
+
+```
+https://www.rijksmuseum.nl/api/oai/[API_KEY]?verb=ListIdentifiers&set=subject:EntirePublicDomainSet&metadataPrefix=oai_dc&resumptionToken=MXxvYWlfZGN8MjAxOC0wMy0xNFQxMzo0MToyMnxzdWJqZWN0OkVudGlyZVB1YmxpY0RvbWFpblNldHwyMDE2LTAzLTEwVDEwOjAxOjA5fERYRjFaWEo1UVc1a1JtVjBZMmdCQUFBQUFBUGdMUzhXUmpkc1pteEdaVEpTVUZOMU5uQm9PVFF6Vm5KNVFRPT18MjAw
+```
+
+Resumption tokens expire over time, which is why it is recommended to use a [script to harvest data](https://github.com/Q42/SimpleOAIHarvester).
+
+### Response
+Each header includes the identifier of the object and a date stamp. A date stamp indicates when a record was created, deleted, or modified.
+
+{% highlight xml %}
+<ListIdentifiers>
+    <header>
+        <identifier>BK-1975-81</identifier>
+        <datestamp>2017-07-31T19:34:40Z</datestamp>
+    </header>
+    <header>
+        <identifier>NG-NM-7687</identifier>
+        <datestamp>2017-09-21T18:48:05Z</datestamp>
+    </header>
+    <resumptionToken completeListSize="540886">MXxvYWlfZGN8MjAxOC0wMy0xNFQxMzo0MToyMnxzdWJqZWN0OkVudGlyZVB1YmxpY0RvbWFpblNldHwyMDE2LTAzLTEwVDEwOjAxOjA5fERYRjFaWEo1UVc1a1JtVjBZMmdCQUFBQUFBUGdMUzhXUmpkc1pteEdaVEpTVUZOMU5uQm9PVFF6Vm5KNVFRPT18MjAw</resumptionToken>
+</ListIdentifiers>
+{% endhighlight %}
