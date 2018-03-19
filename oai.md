@@ -14,7 +14,9 @@ The Rijksmuseum offers an API featuring the [OAI-PMH protocol](https://www.opena
 ## Access to the OAI-PMH API
 To access the data, you will first need to request an API key. You can do this via the advanced settings of your [Rijksstudio account](https://www.rijksmuseum.nl/en/rijksstudio/my/profile). You will be given a key immediately. Every request to the OAI-PMH API must be accompanied by this key:
 
+```
 http://www.rijksmuseum.nl/api/oai/[API_KEY]
+```
 
 ## Documentation
 Below you find the documentation for the Rijksmuseum OAI-PMH API.
@@ -22,15 +24,17 @@ Below you find the documentation for the Rijksmuseum OAI-PMH API.
 ### Verbs
 A verb is used to indicate what data to retrieve. The following verbs can be used:
 
-- **ListRecords:** retrieve an entire set of data.
-- **GetRecord:** retrieve a specific record.
-- **ListMetadataFormats:** retrieve the available metadata formats.
-- **ListSets:** retrieve the available sets of objects.
-- **ListIdentifiers:** retrieve headers with identifiers of objects.
+- **ListRecords** retrieve an entire set of data.
+- **GetRecord** retrieve a specific record.
+- **ListMetadataFormats** retrieve the available metadata formats.
+- **ListSets** retrieve the available sets of objects.
+- **ListIdentifiers** retrieve headers with identifiers of objects.
 
 Every request to the OAI-PMH API must be accompanied by a verb parameter:
 
+```
 http://www.rijksmuseum.nl/api/oai/[API_KEY]?verb=[VERB]
+```
 
 ### Example request
 The following request will fetch all of the public data of The Nightwatch, in the Dublin Core format:
@@ -42,9 +46,9 @@ https://www.rijksmuseum.nl/api/oai/[API_KEY]?verb=GetRecord&metadataPrefix=oai_d
 ### Metadata formats
 The datasets are provided via a simple XML web service. The following metadata formats are available:
 
-- **oai_dc** [Dublin Core](http://dublincore.org)
-- **europeana_edm** [Europeana Data Model](https://pro.europeana.eu/resources/standardization-tools/edm-documentation)
-- **lido** [Lightweight Information Describing Objects](http://lido-schema.org/)
+- **oai_dc** Dublin Core [documentation](http://dublincore.org)
+- **europeana_edm** Europeana Data Model [documentation](https://pro.europeana.eu/resources/standardization-tools/edm-documentation)
+- **lido** Lightweight Information Describing Objects [documentation](http://lido-schema.org/)
 
 The repository [conversion_oai_formats](https://github.com/Rijksmuseum/conversion_oai_formats) can provide insights in how Rijksmuseum data is mapped to these metadata formats.
 
