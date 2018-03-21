@@ -104,7 +104,7 @@ Omitting the set parameter will default to the set of all available objects.
 https://www.rijksmuseum.nl/api/oai/[API_KEY]?verb=ListRecords&set=subject:EntirePublicDomainSet&metadataPrefix=oai_dc
 ```
 
-This request will return the first 100 records in the dataset of all public domain objects. A `resumptionToken` element is included at the end, which can be used to return the next 100 records in the dataset:
+This request will return the first 20 records in the dataset of all public domain objects. A `resumptionToken` element is included at the end of the response, which can be used to request the next 20 records in the dataset:
 
 ```
 https://www.rijksmuseum.nl/api/oai/[API_KEY]?verb=ListRecords&set=subject:EntirePublicDomainSet&metadataPrefix=oai_dc&resumptionToken=MXxvYWlfZGN8MjAxOC0wMy0xNFQxMzo0MToyMnxzdWJqZWN0OkVudGlyZVB1YmxpY0RvbWFpblNldHwyMDE2LTAzLTEwVDEwOjAxOjA5fERYRjFaWEo1UVc1a1JtVjBZMmdCQUFBQUFBUG1YMWNXV2xwNlNFVm1ZMWxVZWpJNFIyZzNXVUZSTlVzdFVRPT18MjA=
@@ -113,7 +113,7 @@ https://www.rijksmuseum.nl/api/oai/[API_KEY]?verb=ListRecords&set=subject:Entire
 Resumption tokens expire over time, which is why it is recommended to use a [script to harvest data](https://github.com/Q42/SimpleOAIHarvester).
 
 ### Response
-Each object description is included in the XML file as a record. The header includes an identifier and date stamp. The metadata element includes fields based on the metadata format definitions, in this case [Dublin Core](http://dublincore.org):
+Each object description is included in the XML response as a record. The header includes an identifier and date stamp. The metadata includes fields based on the metadata format definitions, in this case [Dublin Core](http://dublincore.org):
 
 {% highlight xml %}
 <record>
@@ -180,7 +180,7 @@ https://www.rijksmuseum.nl/api/oai/[API_KEY]?verb=GetRecord&metadataPrefix=oai_d
 This request will return the object description of the Nightwatch (SK-C-5).
 
 ### Response
-An object description is included in the XML file as a record. The header includes an identifier and date stamp. The metadata element includes fields based on the metadata format definitions, in this case [Dublin Core](http://dublincore.org):
+An object description is included in the XML response as a record. The header includes an identifier and date stamp. The metadata includes fields based on the metadata format definitions, in this case [Dublin Core](http://dublincore.org):
 
 {% highlight xml %}
 <record>
@@ -222,7 +222,7 @@ An object description is included in the XML file as a record. The header includ
 {% endhighlight %}
 
 ## ListMetadataFormats
-`GET /oai/[API_KEY]?verb=ListMetadataFormats` retrieves a list of the available metadata formats.
+`GET /oai/[API_KEY]?verb=ListMetadataFormats` retrieves a list of available metadata formats.
 
 ### Request
 ```
@@ -267,7 +267,7 @@ https://www.rijksmuseum.nl/api/oai/[API_KEY]?verb=ListSets
 This request will return a list of available sets of objects.
 
 ### Response
-Each set includes a descriptive name and a set identifier that can be used as a parameter in other requests.
+Each set includes a descriptive name and a set identifier, that can be used as a parameter in other requests.
 
 {% highlight xml %}
 <ListSets>
@@ -307,7 +307,7 @@ Each set includes a descriptive name and a set identifier that can be used as a 
       <td><code>set</code></td>
       <td><code>a-z|0-9|:</code></td>
       <td>all objects</td>
-      <td>The set of objects to harvest.</td>
+      <td>The set of object identifiers to harvest.</td>
     </tr>
     <tr>
       <td><code>metadataPrefix</code></td>
@@ -330,7 +330,7 @@ Each set includes a descriptive name and a set identifier that can be used as a 
 https://www.rijksmuseum.nl/api/oai/[API_KEY]?verb=ListIdentifiers&set=subject:EntirePublicDomainSet&metadataPrefix=oai_dc
 ```
 
-This request will return the first 100 headers in the dataset of all public domain objects. A `resumptionToken` element is included at the end, which can be used to return the next 100 headers in the dataset:
+This request will return the first 20 headers in the dataset of all public domain objects. A `resumptionToken` element is included at the end, which can be used to return the next 20 headers in the dataset:
 
 ```
 https://www.rijksmuseum.nl/api/oai/[API_KEY]?verb=ListIdentifiers&set=subject:EntirePublicDomainSet&metadataPrefix=oai_dc&resumptionToken=MXxvYWlfZGN8MjAxOC0wMy0xNFQxMzo0MToyMnxzdWJqZWN0OkVudGlyZVB1YmxpY0RvbWFpblNldHwyMDE2LTAzLTEwVDEwOjAxOjA5fERYRjFaWEo1UVc1a1JtVjBZMmdCQUFBQUFBUGdMUzhXUmpkc1pteEdaVEpTVUZOMU5uQm9PVFF6Vm5KNVFRPT18MjAw
