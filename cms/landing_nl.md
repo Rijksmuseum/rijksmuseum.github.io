@@ -12,4 +12,4 @@ Sinds 2011 biedt het Rijksmuseum ook een API aan met het OAI-PMH protocol (Open 
 
 ###Gebruik van de API's
 Om gebruik te kunnen maken van de mogelijkheden die de API's bieden heb je een API key nodig. Deze kun je opvragen via de geavanceerde instellingen van je Rijksstudio account. Je krijgt dan direct een code. In de informatie over de API's op Github wordt toegelicht hoe je deze code moet gebruiken.
-Op het gebruik van de API's van het Rijksmuseum zijn gebruiksvoorwaarden van toepassing. Deze lees je [hier](https://www.rijksmuseum.nl/nl/api/api/gebruiksvoorwaarden).
+Op het gebruik van de API's van het Rijksmuseum zijn [gebruiksvoorwaarden](https://www.rijksmuseum.nl/nl/api/api/gebruiksvoorwaarden) van toepassing.
