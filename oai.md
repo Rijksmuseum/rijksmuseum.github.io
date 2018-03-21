@@ -4,7 +4,7 @@ layout: default
 
 For more information about the Rijksmuseum API's, please read [www.rijksmuseum.nl/en/api](https://www.rijksmuseum.nl/en/api).
 
-The use of the Rijksmuseum API have these [terms and conditions](https://www.rijksmuseum.nl/en/api/terms-and-conditions-of-use).
+The use of the Rijksmuseum API is subject to these [terms and conditions](https://www.rijksmuseum.nl/en/api/terms-and-conditions-of-use).
 
 Issues regarding this API can be discussed in the [oai-issues repository](https://github.com/Rijksmuseum/oai-issues/).
 
