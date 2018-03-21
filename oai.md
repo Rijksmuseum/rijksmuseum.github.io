@@ -12,7 +12,7 @@ Issues regarding this API can be discussed in the [oai-issues repository](https:
 The Rijksmuseum offers an API featuring the [OAI-PMH protocol](https://www.openarchives.org/OAI/openarchivesprotocol.html) (Open Archives Initiative Protocol for Metadata Harvesting). The OAI-PMH standard is widely used in the cultural heritage sector to support harvesting metadata of collections. The Rijksmuseum OAI-PMH API provides access to more than 600,000 descriptions of objects (metadata) and digital images from the Rijksmuseum collection. An [example harvester](https://github.com/Q42/SimpleOAIHarvester) is available on GitHub to help you get started quickly.
 
 ## Access to the OAI-PMH API
-To access the data, you will first need to request an API key. You can do this via the advanced settings of your [Rijksstudio account](https://www.rijksmuseum.nl/en/rijksstudio/my/profile). You will be given a key immediately. Every request to the OAI-PMH API must be accompanied by this key:
+To access the data, you will first need to obtain an API key. You can do this via the advanced settings of your [Rijksstudio account](https://www.rijksmuseum.nl/en/rijksstudio/my/profile). You will be given a key instantly upon request. Every request to the OAI-PMH API must be accompanied by this key:
 
 ```
 http://www.rijksmuseum.nl/api/oai/[API_KEY]
