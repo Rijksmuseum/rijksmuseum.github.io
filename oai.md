@@ -60,6 +60,8 @@ The following sets of objects can be retrieved using the ListRecords and ListIde
 - **subject:OnDisplay** All objects currently on display in the Rijksmuseum.
 - **type:prints** All the works on paper.
 
+Omitting the set parameter will default to the set of all available objects.
+
 -----------------------------------------
 
 ## ListRecords
