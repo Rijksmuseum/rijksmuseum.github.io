@@ -1,2 +1,4 @@
 title: Rijksmuseum API pages
 markdown: kramdown
+
+theme: jekyll-theme-slate

@@ -1,5 +1,5 @@
 ---
-layout: index
+layout: default
 ---
 
 For more information about the Rijksmuseum API, please read [www.rijksmuseum.nl/en/api](https://www.rijksmuseum.nl/en/api).
@@ -10,11 +10,11 @@ The use of the Rijksmuseum API have these [terms and conditions](https://www.rij
 
 ## The Rijksmuseum API
 
-The live website API (which has a live link to the website platform) makes the full power of the award-winning Rijksmuseum website directly accessible to a large group of developers. Searching the collection is one activity that offers a wide range of interesting options. The same is true of the “explore the collection” pages, the Rijksstudio users’ collections, and the tiled images used to zoom in to tight close-ups of works of art. Calendar information is also available, for example. 
+The live website API (which has a live link to the website platform) makes the full power of the award-winning Rijksmuseum website directly accessible to a large group of developers. Searching the collection is one activity that offers a wide range of interesting options. The same is true of the “explore the collection” pages, the Rijksstudio users’ collections, and the tiled images used to zoom in to tight close-ups of works of art. Calendar information is also available, for example.
 The JSON-based service is so simple that, in no time at all, you can build something that makes use of the Rijksmuseum’s rich and attractive content.
 
 ## Access to the API
-You will first need to request an API key, to access the data and images. You can do this via the advanced settings of your [Rijksstudio account](https://www.rijksmuseum.nl/nl/mijn/gegevens). You will then immediately be given a code. You will need this code to use the APIs. 
+You will first need to request an API key, to access the data and images. You can do this via the advanced settings of your [Rijksstudio account](https://www.rijksmuseum.nl/nl/mijn/gegevens). You will then immediately be given a code. You will need this code to use the APIs.
 
 ## Documentation
 Below you find the documentation for the live website API.
@@ -72,9 +72,9 @@ https://www.rijksmuseum.nl/api/nl/collection/sk-c-5?key=fakekey&format=json
 There are API's available for the following elements:
 
 - **Collection:** The complete online collection of the Rijksmuseum with all public data.  
-- **Content pages:** Static pages as used on the website. 
-- **Usersets:** Sets from Rijksstudio users. 
-- **Calendar:** Calendar and availability of expositions, tours, etc. 
+- **Content pages:** Static pages as used on the website.
+- **Usersets:** Sets from Rijksstudio users.
+- **Calendar:** Calendar and availability of expositions, tours, etc.
 
 ## Collection
 `GET /api/[culture]/collection` gives the full collection with brief information about each work. This results are split up in result pages. By using the `p` and `ps` parameters you can fetch more results. All of the other parameters are identical to the [search page](https://www.rijksmuseum.nl/nl/zoeken) on the Rijksmuseum website. You can use that to find out what's the best query to use.
@@ -687,7 +687,7 @@ See the [demo's page](demos) for an example.
 ```
 https://www.rijksmuseum.nl/api/pages/nl/ontdek-de-collectie/overzicht/rembrandt-harmensz-van-rijn?key=fakekey&format=json
 ```
- 
+
 ### Response
 {% highlight javascript %}
 {
@@ -962,7 +962,7 @@ https://www.rijksmuseum.nl/api/usersets/123-setname-3?key=fakekey&format=json
 
 
 ## Events calendar
-`GET /api/[culture]/agenda/[date]` shows all events for the given date. 
+`GET /api/[culture]/agenda/[date]` shows all events for the given date.
 
 <table>
   <thead>
