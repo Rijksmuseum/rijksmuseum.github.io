@@ -11,4 +11,4 @@ Since 2011, the Rijksmuseum also offers an API featuring the [OAI-PMH protocol](
 [Further details about the OAI API](http://rijksmuseum.github.io/oai)
 
 ###Using the API's
-In order to access the possibilities the API's have to offer you need to have an API key. This personal code can be obtained through the advanced settings of your Rijksstudio user account. You will be provided with your API key instantly upon request. The API documentation on Github explains how to use the key. Using the Rijksmuseum's API's is subject to a set of [terms and conditions](https://www.rijksmuseum.nl/en/api/terms-and-conditions-of-use).
+In order to access the possibilities the API's have to offer you need to have an API key. This personal code can be obtained through the advanced settings of your [Rijksstudio user account](https://www.rijksmuseum.nl/en/rijksstudio/my/profile). You will be provided with your API key instantly upon request. The API documentation on Github explains how to use the key. Using the Rijksmuseum's API's is subject to a set of [terms and conditions](https://www.rijksmuseum.nl/en/api/terms-and-conditions-of-use).
