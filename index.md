@@ -154,7 +154,7 @@ There are API's available for the following elements:
       <td><code>imgonly</code></td>
       <td><code>True</code></td>
       <td><code>False</code></td>
-      <td>Only give resuls for which an image is available or not</td>
+      <td>Only give results for which an image is available or not</td>
     </tr>
     <tr>
       <td><code>toppieces</code></td>
