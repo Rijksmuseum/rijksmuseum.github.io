@@ -10,11 +10,14 @@ The use of the Rijksmuseum API is subject to these [terms and conditions](https:
 
 Issues regarding this API can be discussed in the [api-issues repository](https://github.com/Rijksmuseum/api-issues/).
 
+
 ## The Rijksmuseum API
 The live website API (which has a live link to the website platform) makes the full power of the award-winning [Rijksmuseum website](https://www.rijksmuseum.nl) directly accessible to developers. Searching the collection through the API offers a wide range of interesting possibilities, as do features such as the “explore the collection” pages, the Rijksstudio users’ collections, and the tiled images used to zoom in to close-ups of works of art. Other kinds of data are also available, such as information from the Rijksmuseum's events calendar. The JSON-based service is so easy to use that you can create an application using the Rijksmuseum’s rich and freely accessible content in no time.
 
+
 ## Access to the API
-You will first need to request an API key, to access the data and images. You can do this via the advanced settings of your [Rijksstudio account](https://www.rijksmuseum.nl/nl/mijn/gegevens). You will then immediately be given a code. You will need this code to use the APIs.
+To access the data and images, you will first need to obtain an API key. You can do this via the advanced settings of your [Rijksstudio account](https://www.rijksmuseum.nl/en/rijksstudio/my/profile). You will be given a key instantly upon request. Every request to the API must be accompanied by this key.
+
 
 ## Documentation
 Below you find the documentation for the live website API.
@@ -58,15 +61,9 @@ Most of the endpoints are language dependent. Use one of the following language 
 The following request will fetch all of the public data of The Nightwatch, in Dutch using the format JSON:
 
 ```
-https://www.rijksmuseum.nl/api/nl/collection/sk-c-5?key=fakekey&format=json
+https://www.rijksmuseum.nl/api/nl/collection/SK-C-5?key=[API_KEY]&format=json
 ```
 
-### Remarks
-- Dates in a response is always UTC
-- You can request the API-key via the advanced settings in your Rijksstudio account.
-
-
------------------------------------------
 
 ## Endpoints
 There are API's available for the following elements:
@@ -75,6 +72,7 @@ There are API's available for the following elements:
 - **Content pages:** Static pages as used on the website.
 - **Usersets:** Sets from Rijksstudio users.
 - **Calendar:** Calendar and availability of expositions, tours, etc.
+
 
 ## Collection
 `GET /api/[culture]/collection` gives the full collection with brief information about each work. This results are split up in result pages. By using the `p` and `ps` parameters you can fetch more results. All of the other parameters are identical to the [search page](https://www.rijksmuseum.nl/nl/zoeken) on the Rijksmuseum website. You can use that to find out what's the best query to use.
