@@ -976,7 +976,7 @@ https://www.rijksmuseum.nl/api/nl/usersets/1836065-meestermatches?key=fakekey&fo
     <tr>
       <td><code>culture</code></td>
       <td><code>nl</code> / <code>en</code></td>
-      <td>The language of the events.</td>
+      <td>The language of the events</td>
     </tr>
     <tr>
       <td><code>date</code></td>
@@ -988,7 +988,7 @@ https://www.rijksmuseum.nl/api/nl/usersets/1836065-meestermatches?key=fakekey&fo
 
 ### Request
 ```
-https://www.rijksmuseum.nl/api/nl/agenda/2013-10-18?key=fakekey&format=json
+https://www.rijksmuseum.nl/api/nl/agenda/2018-05-31?key=[API_KEY]&format=json
 ```
 
 ### Response
