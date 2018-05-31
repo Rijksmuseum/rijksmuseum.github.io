@@ -11,9 +11,7 @@ The use of the Rijksmuseum API is subject to these [terms and conditions](https:
 Issues regarding this API can be discussed in the [api-issues repository](https://github.com/Rijksmuseum/api-issues/).
 
 ## The Rijksmuseum API
-
-The live website API (which has a live link to the website platform) makes the full power of the award-winning Rijksmuseum website directly accessible to a large group of developers. Searching the collection is one activity that offers a wide range of interesting options. The same is true of the “explore the collection” pages, the Rijksstudio users’ collections, and the tiled images used to zoom in to tight close-ups of works of art. Calendar information is also available, for example.
-The JSON-based service is so simple that, in no time at all, you can build something that makes use of the Rijksmuseum’s rich and attractive content.
+The live website API (which has a live link to the website platform) makes the full power of the award-winning [Rijksmuseum website](https://www.rijksmuseum.nl) directly accessible to developers. Searching the collection through the API offers a wide range of interesting possibilities, as do features such as the “explore the collection” pages, the Rijksstudio users’ collections, and the tiled images used to zoom in to close-ups of works of art. Other kinds of data are also available, such as information from the Rijksmuseum's events calendar. The JSON-based service is so easy to use that you can create an application using the Rijksmuseum’s rich and freely accessible content in no time.
 
 ## Access to the API
 You will first need to request an API key, to access the data and images. You can do this via the advanced settings of your [Rijksstudio account](https://www.rijksmuseum.nl/nl/mijn/gegevens). You will then immediately be given a code. You will need this code to use the APIs.
