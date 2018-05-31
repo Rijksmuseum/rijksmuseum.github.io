@@ -796,7 +796,7 @@ https://www.rijksmuseum.nl/api/pages/nl/rijksstudio/kunstenaars/rembrandt-van-ri
 
 
 ## Usersets
-`GET /api/usersets` shows the sets made by Rijksstudio users. The following parameters are supported:
+`GET /api/[culture]/usersets` shows the sets made by Rijksstudio users. The following parameters are supported:
 
 <table>
   <thead>
@@ -808,6 +808,11 @@ https://www.rijksmuseum.nl/api/pages/nl/rijksstudio/kunstenaars/rembrandt-van-ri
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><code>culture</code></td>
+      <td><code>nl</code> / <code>en</code></td>
+      <td>The language of the page</td>
+    </tr>
     <tr>
       <td><code>page</code></td>
       <td><code>0-n</code></td>
@@ -825,7 +830,7 @@ https://www.rijksmuseum.nl/api/pages/nl/rijksstudio/kunstenaars/rembrandt-van-ri
 
 ### Request
 ```
-https://www.rijksmuseum.nl/api/usersets?key=fakekey&format=json&page=2
+https://www.rijksmuseum.nl/api/nl/usersets?key=[API_KEY]&format=json&page=2
 ```
 
 ### Response
@@ -864,7 +869,7 @@ https://www.rijksmuseum.nl/api/usersets?key=fakekey&format=json&page=2
 
 
 ## Userset details
-`GET /api/usersets/[id]` gives more details of a set. You can find the details in /api/usersets.
+`GET /api/[culture]/usersets/[id]` gives more details about a set. You can retrieve id's from the /api/usersets.
 
 <table>
   <thead>
@@ -890,7 +895,7 @@ https://www.rijksmuseum.nl/api/usersets?key=fakekey&format=json&page=2
 
 ### Request
 ```
-https://www.rijksmuseum.nl/api/usersets/123-setname-3?key=fakekey&format=json
+https://www.rijksmuseum.nl/api/nl/usersets/1836065-meestermatches?key=fakekey&format=json
 ```
 
 ### Response
