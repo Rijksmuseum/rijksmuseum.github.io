@@ -6,15 +6,18 @@ For more information about the Rijksmuseum API, please read [www.rijksmuseum.nl/
 
 For live code examples demonstrating the use of the Rijksmuseum API, please checkout the [demo's page](demos).
 
-The use of the Rijksmuseum API have these [terms and conditions](https://www.rijksmuseum.nl/en/api/terms-and-conditions-of-use).
+The use of the Rijksmuseum API is subject to these [terms and conditions](https://www.rijksmuseum.nl/en/api/terms-and-conditions-of-use).
+
+Issues regarding this API can be discussed in the [api-issues repository](https://github.com/Rijksmuseum/api-issues/).
+
 
 ## The Rijksmuseum API
+The live website API (which has a live link to the website platform) makes the full power of the award-winning [Rijksmuseum website](https://www.rijksmuseum.nl) directly accessible to developers. Searching the collection through the API offers a wide range of interesting possibilities, as do features such as the “explore the collection” pages, the Rijksstudio users’ collections, and the tiled images used to zoom in to close-ups of works of art. Other kinds of data are also available, such as information from the Rijksmuseum's events calendar. The JSON-based service is so easy to use that you can create an application using the Rijksmuseum’s rich and freely accessible content in no time.
 
-The live website API (which has a live link to the website platform) makes the full power of the award-winning Rijksmuseum website directly accessible to a large group of developers. Searching the collection is one activity that offers a wide range of interesting options. The same is true of the “explore the collection” pages, the Rijksstudio users’ collections, and the tiled images used to zoom in to tight close-ups of works of art. Calendar information is also available, for example.
-The JSON-based service is so simple that, in no time at all, you can build something that makes use of the Rijksmuseum’s rich and attractive content.
 
 ## Access to the API
-You will first need to request an API key, to access the data and images. You can do this via the advanced settings of your [Rijksstudio account](https://www.rijksmuseum.nl/nl/mijn/gegevens). You will then immediately be given a code. You will need this code to use the APIs.
+To access the data and images, you will first need to obtain an API key. You can do this via the advanced settings of your [Rijksstudio account](https://www.rijksmuseum.nl/en/rijksstudio/my/profile). You will be given a key instantly upon request. Every request to the API must be accompanied by this key.
+
 
 ## Documentation
 Below you find the documentation for the live website API.
@@ -58,15 +61,9 @@ Most of the endpoints are language dependent. Use one of the following language 
 The following request will fetch all of the public data of The Nightwatch, in Dutch using the format JSON:
 
 ```
-https://www.rijksmuseum.nl/api/nl/collection/sk-c-5?key=fakekey&format=json
+https://www.rijksmuseum.nl/api/nl/collection/SK-C-5?key=[API_KEY]&format=json
 ```
 
-### Remarks
-- Dates in a response is always UTC
-- You can request the API-key via the advanced settings in your Rijksstudio account.
-
-
------------------------------------------
 
 ## Endpoints
 There are API's available for the following elements:
@@ -76,8 +73,9 @@ There are API's available for the following elements:
 - **Usersets:** Sets from Rijksstudio users.
 - **Calendar:** Calendar and availability of expositions, tours, etc.
 
+
 ## Collection
-`GET /api/[culture]/collection` gives the full collection with brief information about each work. This results are split up in result pages. By using the `p` and `ps` parameters you can fetch more results. All of the other parameters are identical to the [search page](https://www.rijksmuseum.nl/nl/zoeken) on the Rijksmuseum website. You can use that to find out what's the best query to use.
+`GET /api/[culture]/collection` gives the full collection with brief information about each work. The results are split up in result pages. By using the `p` and `ps` parameters you can fetch more results. All of the other parameters are identical to the [search page](https://www.rijksmuseum.nl/nl/zoeken) on the Rijksmuseum website. You can use that page to find out what's the best query to use.
 
 
 <table>
@@ -100,7 +98,7 @@ There are API's available for the following elements:
       <td><code>p</code></td>
       <td><code>0-n</code></td>
       <td><code>0</code></td>
-      <td>The result page. Note that <code>p * ps</code> cannot exceed 10.000.</td>
+      <td>The result page. Note that <code>p * ps</code> cannot exceed 10.000</td>
     </tr>
     <tr>
       <td><code>ps</code></td>
@@ -118,19 +116,19 @@ There are API's available for the following elements:
       <td><code>maker</code></td>
       <td><code>a-z</code></td>
       <td></td>
-      <td>Works need to be made by this artist.</td>
+      <td>Works need to be made by this artist</td>
     </tr>
     <tr>
       <td><code>type</code></td>
       <td><code>a-z</code></td>
       <td></td>
-      <td>The type of the art work.</td>
+      <td>The type of the artwork</td>
     </tr>
     <tr>
       <td><code>material</code></td>
       <td><code>a-z</code></td>
       <td></td>
-      <td>The material of the art work</td>
+      <td>The material of the artwork</td>
     </tr>
     <tr>
       <td><code>technique</code></td>
@@ -203,7 +201,7 @@ There are API's available for the following elements:
 
 ### Request
 ```
-https://www.rijksmuseum.nl/api/nl/collection?key=fakekey&format=json&type=schilderij&f.normalized32Colors.hex=%20%23367614
+https://www.rijksmuseum.nl/api/nl/collection?key=[API_KEY]&format=json&type=schilderij&f.normalized32Colors.hex=%20%23367614
 ```
 
 ### Response
@@ -270,14 +268,14 @@ https://www.rijksmuseum.nl/api/nl/collection?key=fakekey&format=json&type=schild
     <tr>
       <td><code>object-number</code></td>
       <td><code>a-z|0-9|-</code></td>
-      <td>Het identifier of the work</td>
+      <td>The identifier of the work (case-sensitive)</td>
     </tr>
   </tbody>
 </table>
 
 ### Request
 ```
-https://www.rijksmuseum.nl/api/nl/collection/sk-c-5?key=fakekey&format=json
+https://www.rijksmuseum.nl/api/nl/collection/SK-C-5?key=[API_KEY]&format=json
 ```
 
 ### Response
@@ -510,9 +508,7 @@ https://www.rijksmuseum.nl/api/nl/collection/sk-c-5?key=fakekey&format=json
 
 
 ## Collection images
-
-`GET https://www.rijksmuseum.nl/api/nl/collection/[object-number]/tiles?key=fakekey&format=json` gives all the information you can use to show the image split up in tiles. This is used to implement the zoom functionality on the Rijksmuseum website.
-This specific API only supports the JSON format.
+`GET /api/[culture]/collection/[object-number]/tiles` gives all the information you need to show the image split up in tiles. This is used to implement the zoom functionality on the Rijksmuseum website. This specific API only supports the JSON format.
 
 <table>
   <thead>
@@ -533,7 +529,7 @@ This specific API only supports the JSON format.
 
 ### Request
 ```
-https://www.rijksmuseum.nl/api/nl/collection/SK-C-5/tiles?key=fakekey&format=json
+https://www.rijksmuseum.nl/api/nl/collection/SK-C-5/tiles?key=[API_KEY]&format=json
 ```
 
 ### Response
@@ -650,7 +646,7 @@ https://www.rijksmuseum.nl/api/nl/collection/SK-C-5/tiles?key=fakekey&format=jso
 }
 {% endhighlight %}
 
-As you can see, this api returns a list of `levels`. These levels have a number of `tiles`. The tiles form the full image. You can choose the right level by using the width and height. They describe the total resolution of the chosen level. You can also select a level by name. Level `z0` contains the largest available image and `z6` the smallest.
+As you can see, this API returns a list of `levels`. These levels have a number of `tiles`. The tiles form the full image. You can choose the right level by using the width and height. They describe the total resolution of the chosen level. You can also select a level by name. Level `z0` contains the largest available image and `z6` the smallest.
 
 When you have chosen a level you can construct the image by positioning the tiles. X and Y describe the horizontal and vertical position of the image.
 
@@ -677,7 +673,7 @@ See the [demo's page](demos) for an example.
     <tr>
       <td><code>slug</code></td>
       <td><code>a-z|0-9|-/</code></td>
-      <td>The slug that identifies the page. You can find this in the url of the page itself. For the <a href="https://www.rijksmuseum.nl/en/explore-the-collection">explore the collection page</a> this is: <code>explore-the-collection</code>.
+      <td>The slug that identifies the page. You can find this in the url of the page itself. For the <a href="https://www.rijksmuseum.nl/en/rijksstudio">explore the collection page</a> this is: <code>rijksstudio</code>.
     </td>
     </tr>
   </tbody>
@@ -685,7 +681,7 @@ See the [demo's page](demos) for an example.
 
 ### Request
 ```
-https://www.rijksmuseum.nl/api/pages/nl/ontdek-de-collectie/overzicht/rembrandt-harmensz-van-rijn?key=fakekey&format=json
+https://www.rijksmuseum.nl/api/pages/nl/rijksstudio/kunstenaars/rembrandt-van-rijn?key=[API_KEY]&format=json
 ```
 
 ### Response
@@ -799,9 +795,8 @@ https://www.rijksmuseum.nl/api/pages/nl/ontdek-de-collectie/overzicht/rembrandt-
 {% endhighlight %}
 
 
-
 ## Usersets
-`GET /api/usersets` shows the sets made by Rijksstudio users. The following parameters are supported:
+`GET /api/[culture]/usersets` shows the sets made by Rijksstudio users. The following parameters are supported:
 
 <table>
   <thead>
@@ -813,6 +808,11 @@ https://www.rijksmuseum.nl/api/pages/nl/ontdek-de-collectie/overzicht/rembrandt-
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><code>culture</code></td>
+      <td><code>nl</code> / <code>en</code></td>
+      <td>The language of the page</td>
+    </tr>
     <tr>
       <td><code>page</code></td>
       <td><code>0-n</code></td>
@@ -830,7 +830,7 @@ https://www.rijksmuseum.nl/api/pages/nl/ontdek-de-collectie/overzicht/rembrandt-
 
 ### Request
 ```
-https://www.rijksmuseum.nl/api/usersets?key=fakekey&format=json&page=2
+https://www.rijksmuseum.nl/api/nl/usersets?key=[API_KEY]&format=json&page=2
 ```
 
 ### Response
@@ -869,7 +869,7 @@ https://www.rijksmuseum.nl/api/usersets?key=fakekey&format=json&page=2
 
 
 ## Userset details
-`GET /api/usersets/[id]` gives more details of a set. You can find the details in /api/usersets.
+`GET /api/[culture]/usersets/[id]` gives more details about a set. You can retrieve id's from the /api/usersets.
 
 <table>
   <thead>
@@ -895,7 +895,7 @@ https://www.rijksmuseum.nl/api/usersets?key=fakekey&format=json&page=2
 
 ### Request
 ```
-https://www.rijksmuseum.nl/api/usersets/123-setname-3?key=fakekey&format=json
+https://www.rijksmuseum.nl/api/nl/usersets/1836065-meestermatches?key=fakekey&format=json
 ```
 
 ### Response
@@ -976,7 +976,7 @@ https://www.rijksmuseum.nl/api/usersets/123-setname-3?key=fakekey&format=json
     <tr>
       <td><code>culture</code></td>
       <td><code>nl</code> / <code>en</code></td>
-      <td>The language of the events.</td>
+      <td>The language of the events</td>
     </tr>
     <tr>
       <td><code>date</code></td>
@@ -988,7 +988,7 @@ https://www.rijksmuseum.nl/api/usersets/123-setname-3?key=fakekey&format=json
 
 ### Request
 ```
-https://www.rijksmuseum.nl/api/nl/agenda/2013-10-18?key=fakekey&format=json
+https://www.rijksmuseum.nl/api/nl/agenda/2018-05-31?key=[API_KEY]&format=json
 ```
 
 ### Response
@@ -1084,7 +1084,7 @@ https://www.rijksmuseum.nl/api/nl/agenda/2013-10-18?key=fakekey&format=json
 
 ### Request
 ```
-https://www.rijksmuseum.nl/api/nl/agenda/2013-10-18/expostition/0ee170d3-9604-48ac-b15f-014d911bf065/availability/e2b108b3-52b0-4a89-ac64-19514f8c5434?key=fakekey&format=json
+https://www.rijksmuseum.nl/api/nl/agenda/2018-05-31/expostition/5d63626e-7f05-e711-80cd-5820b1e20440/availability/afe24e88-8205-e711-80cd-5820b1e20440?key=[API_KEY]&format=json
 ```
 
 ### Response

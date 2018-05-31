@@ -2,7 +2,7 @@
 layout: default
 ---
 
-For more information about the Rijksmuseum API's, please read [www.rijksmuseum.nl/en/api](https://www.rijksmuseum.nl/en/api).
+For more information about the Rijksmuseum API, please read [www.rijksmuseum.nl/en/api](https://www.rijksmuseum.nl/en/api).
 
 The use of the Rijksmuseum API is subject to these [terms and conditions](https://www.rijksmuseum.nl/en/api/terms-and-conditions-of-use).
 
