@@ -673,7 +673,7 @@ See the [demo's page](demos) for an example.
     <tr>
       <td><code>slug</code></td>
       <td><code>a-z|0-9|-/</code></td>
-      <td>The slug that identifies the page. You can find this in the url of the page itself. For the <a href="https://www.rijksmuseum.nl/en/explore-the-collection">explore the collection page</a> this is: <code>explore-the-collection</code>.
+      <td>The slug that identifies the page. You can find this in the url of the page itself. For the <a href="https://www.rijksmuseum.nl/en/rijksstudio">explore the collection page</a> this is: <code>rijksstudio</code>.
     </td>
     </tr>
   </tbody>
@@ -681,7 +681,7 @@ See the [demo's page](demos) for an example.
 
 ### Request
 ```
-https://www.rijksmuseum.nl/api/pages/nl/ontdek-de-collectie/overzicht/rembrandt-harmensz-van-rijn?key=fakekey&format=json
+https://www.rijksmuseum.nl/api/pages/nl/rijksstudio/kunstenaars/rembrandt-van-rijn?key=[API_KEY]&format=json
 ```
 
 ### Response
@@ -793,7 +793,6 @@ https://www.rijksmuseum.nl/api/pages/nl/ontdek-de-collectie/overzicht/rembrandt-
   "similarPages": null
 }
 {% endhighlight %}
-
 
 
 ## Usersets
