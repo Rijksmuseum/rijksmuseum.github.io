@@ -75,7 +75,7 @@ There are API's available for the following elements:
 
 
 ## Collection
-`GET /api/[culture]/collection` gives the full collection with brief information about each work. This results are split up in result pages. By using the `p` and `ps` parameters you can fetch more results. All of the other parameters are identical to the [search page](https://www.rijksmuseum.nl/nl/zoeken) on the Rijksmuseum website. You can use that to find out what's the best query to use.
+`GET /api/[culture]/collection` gives the full collection with brief information about each work. The results are split up in result pages. By using the `p` and `ps` parameters you can fetch more results. All of the other parameters are identical to the [search page](https://www.rijksmuseum.nl/nl/zoeken) on the Rijksmuseum website. You can use that page to find out what's the best query to use.
 
 
 <table>
@@ -98,7 +98,7 @@ There are API's available for the following elements:
       <td><code>p</code></td>
       <td><code>0-n</code></td>
       <td><code>0</code></td>
-      <td>The result page. Note that <code>p * ps</code> cannot exceed 10.000.</td>
+      <td>The result page. Note that <code>p * ps</code> cannot exceed 10.000</td>
     </tr>
     <tr>
       <td><code>ps</code></td>
@@ -116,19 +116,19 @@ There are API's available for the following elements:
       <td><code>maker</code></td>
       <td><code>a-z</code></td>
       <td></td>
-      <td>Works need to be made by this artist.</td>
+      <td>Works need to be made by this artist</td>
     </tr>
     <tr>
       <td><code>type</code></td>
       <td><code>a-z</code></td>
       <td></td>
-      <td>The type of the art work.</td>
+      <td>The type of the artwork</td>
     </tr>
     <tr>
       <td><code>material</code></td>
       <td><code>a-z</code></td>
       <td></td>
-      <td>The material of the art work</td>
+      <td>The material of the artwork</td>
     </tr>
     <tr>
       <td><code>technique</code></td>
@@ -201,7 +201,7 @@ There are API's available for the following elements:
 
 ### Request
 ```
-https://www.rijksmuseum.nl/api/nl/collection?key=fakekey&format=json&type=schilderij&f.normalized32Colors.hex=%20%23367614
+https://www.rijksmuseum.nl/api/nl/collection?key=[API_KEY]&format=json&type=schilderij&f.normalized32Colors.hex=%20%23367614
 ```
 
 ### Response
