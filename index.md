@@ -268,14 +268,14 @@ https://www.rijksmuseum.nl/api/nl/collection?key=[API_KEY]&format=json&type=schi
     <tr>
       <td><code>object-number</code></td>
       <td><code>a-z|0-9|-</code></td>
-      <td>Het identifier of the work</td>
+      <td>The identifier of the work, case sensitive</td>
     </tr>
   </tbody>
 </table>
 
 ### Request
 ```
-https://www.rijksmuseum.nl/api/nl/collection/sk-c-5?key=fakekey&format=json
+https://www.rijksmuseum.nl/api/nl/collection/SK-C-5?key=[API_KEY]&format=json
 ```
 
 ### Response
