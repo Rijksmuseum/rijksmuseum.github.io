@@ -268,7 +268,7 @@ https://www.rijksmuseum.nl/api/nl/collection?key=[API_KEY]&format=json&type=schi
     <tr>
       <td><code>object-number</code></td>
       <td><code>a-z|0-9|-</code></td>
-      <td>The identifier of the work, case sensitive</td>
+      <td>The identifier of the work (case-sensitive)</td>
     </tr>
   </tbody>
 </table>
@@ -508,9 +508,7 @@ https://www.rijksmuseum.nl/api/nl/collection/SK-C-5?key=[API_KEY]&format=json
 
 
 ## Collection images
-
-`GET https://www.rijksmuseum.nl/api/nl/collection/[object-number]/tiles?key=fakekey&format=json` gives all the information you can use to show the image split up in tiles. This is used to implement the zoom functionality on the Rijksmuseum website.
-This specific API only supports the JSON format.
+`GET /api/[culture]/collection/[object-number]/tiles` gives all the information you need to show the image split up in tiles. This is used to implement the zoom functionality on the Rijksmuseum website. This specific API only supports the JSON format.
 
 <table>
   <thead>
@@ -531,7 +529,7 @@ This specific API only supports the JSON format.
 
 ### Request
 ```
-https://www.rijksmuseum.nl/api/nl/collection/SK-C-5/tiles?key=fakekey&format=json
+https://www.rijksmuseum.nl/api/nl/collection/SK-C-5/tiles?key=[API_KEY]&format=json
 ```
 
 ### Response
@@ -648,7 +646,7 @@ https://www.rijksmuseum.nl/api/nl/collection/SK-C-5/tiles?key=fakekey&format=jso
 }
 {% endhighlight %}
 
-As you can see, this api returns a list of `levels`. These levels have a number of `tiles`. The tiles form the full image. You can choose the right level by using the width and height. They describe the total resolution of the chosen level. You can also select a level by name. Level `z0` contains the largest available image and `z6` the smallest.
+As you can see, this API returns a list of `levels`. These levels have a number of `tiles`. The tiles form the full image. You can choose the right level by using the width and height. They describe the total resolution of the chosen level. You can also select a level by name. Level `z0` contains the largest available image and `z6` the smallest.
 
 When you have chosen a level you can construct the image by positioning the tiles. X and Y describe the horizontal and vertical position of the image.
 
