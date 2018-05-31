@@ -1084,7 +1084,7 @@ https://www.rijksmuseum.nl/api/nl/agenda/2018-05-31?key=[API_KEY]&format=json
 
 ### Request
 ```
-https://www.rijksmuseum.nl/api/nl/agenda/2013-10-18/expostition/0ee170d3-9604-48ac-b15f-014d911bf065/availability/e2b108b3-52b0-4a89-ac64-19514f8c5434?key=fakekey&format=json
+https://www.rijksmuseum.nl/api/nl/agenda/2018-05-31/expostition/5d63626e-7f05-e711-80cd-5820b1e20440/availability/afe24e88-8205-e711-80cd-5820b1e20440?key=[API_KEY]&format=json
 ```
 
 ### Response
