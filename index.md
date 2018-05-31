@@ -6,7 +6,9 @@ For more information about the Rijksmuseum API, please read [www.rijksmuseum.nl/
 
 For live code examples demonstrating the use of the Rijksmuseum API, please checkout the [demo's page](demos).
 
-The use of the Rijksmuseum API have these [terms and conditions](https://www.rijksmuseum.nl/en/api/terms-and-conditions-of-use).
+The use of the Rijksmuseum API is subject to these [terms and conditions](https://www.rijksmuseum.nl/en/api/terms-and-conditions-of-use).
+
+Issues regarding this API can be discussed in the [api-issues repository](https://github.com/Rijksmuseum/api-issues/).
 
 ## The Rijksmuseum API
 
