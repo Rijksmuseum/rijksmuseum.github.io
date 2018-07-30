@@ -869,7 +869,7 @@ https://www.rijksmuseum.nl/api/nl/usersets?key=[API_KEY]&format=json&page=2
 
 
 ## Userset details
-`GET /api/[culture]/usersets/[id]` gives more details about a set. You can retrieve id's from the /api/usersets.
+`GET /api/[culture]/usersets/[id]` gives more details about a set. The id of a set is composed of a user id, dash and name of set. You can retrieve id's from the /api/usersets.
 
 <table>
   <thead>
