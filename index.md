@@ -75,7 +75,7 @@ There are API's available for the following elements:
 
 
 ## Collection
-`GET /api/[culture]/collection` gives the full collection with brief information about each work. The results are split up in result pages. By using the `p` and `ps` parameters you can fetch more results. All of the other parameters are identical to the [search page](https://www.rijksmuseum.nl/nl/zoeken) on the Rijksmuseum website. You can use that page to find out what's the best query to use.
+`GET /api/[culture]/collection` gives the full collection with brief information about each work. The results are split up in result pages. By using the `p` and `ps` parameters you can fetch more results. All of the other parameters are identical to the [advanced search page](https://www.rijksmuseum.nl/en/search/advanced) on the Rijksmuseum website. You can use that page to find out what's the best query to use.
 
 
 <table>
