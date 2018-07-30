@@ -75,7 +75,7 @@ There are API's available for the following elements:
 
 
 ## Collection
-`GET /api/[culture]/collection` gives the full collection with brief information about each work. The results are split up in result pages. By using the `p` and `ps` parameters you can fetch more results. All of the other parameters are identical to the [search page](https://www.rijksmuseum.nl/nl/zoeken) on the Rijksmuseum website. You can use that page to find out what's the best query to use.
+`GET /api/[culture]/collection` gives the full collection with brief information about each work. The results are split up in result pages. By using the `p` and `ps` parameters you can fetch more results. All of the other parameters are identical to the [advanced search page](https://www.rijksmuseum.nl/en/search/advanced) on the Rijksmuseum website. You can use that page to find out what's the best query to use.
 
 
 <table>
@@ -869,7 +869,7 @@ https://www.rijksmuseum.nl/api/nl/usersets?key=[API_KEY]&format=json&page=2
 
 
 ## Userset details
-`GET /api/[culture]/usersets/[id]` gives more details about a set. You can retrieve id's from the /api/usersets.
+`GET /api/[culture]/usersets/[id]` gives more details about a set. The id of a set is composed of a user id, dash and name of set. You can retrieve id's from the /api/usersets.
 
 <table>
   <thead>
