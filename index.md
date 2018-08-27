@@ -57,6 +57,8 @@ Most of the endpoints are language dependent. Use one of the following language 
 - `nl` : Dutch  
 - `en` : English  
 
+Please note that choosing a particular locale might impact the obtained result set. This is due to the fact that many objects have more thorough descriptions in Dutch.
+
 ### Example request
 The following request will fetch all of the public data of The Nightwatch, in Dutch using the format JSON:
 
