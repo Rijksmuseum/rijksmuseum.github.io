@@ -95,6 +95,18 @@ Omitting the set parameter will default to the set of all available objects.
       <td></td>
       <td>The flow control token returned by a previous ListRecords request.</td>
     </tr>
+    <tr>
+      <td><code>from</code></td>
+      <td><code>YYYY-MM-DDThh:mm:ssZ</code></td>
+      <td>earliest datestamp</td>
+      <td>Optional argument for selective harvesting, based on a specified date range. The from parameter specifies a bound interpreted as "greater than or equal to".</td>
+    </tr>
+    <tr>
+      <td><code>until</code></td>
+      <td><code>YYYY-MM-DDThh:mm:ssZ</code></td>
+      <td>most recent datestamp</td>
+      <td>Optional argument for selective harvesting, based on a specified date range. The until parameter specifies a bound interpreted as "less than or equal to".</td>
+    </tr>
   </tbody>
 </table>
 
@@ -320,6 +332,18 @@ Each set includes a descriptive name and a set identifier, that can be used as a
       <td><code>a-z|0-9</code></td>
       <td></td>
       <td>The flow control token returned by a previous ListRecords request.</td>
+    </tr>
+    <tr>
+      <td><code>from</code></td>
+      <td><code>YYYY-MM-DDThh:mm:ssZ</code></td>
+      <td>earliest datestamp</td>
+      <td>Optional argument for selective harvesting, based on a specified date range. The from parameter specifies a bound interpreted as "greater than or equal to".</td>
+    </tr>
+    <tr>
+      <td><code>until</code></td>
+      <td><code>YYYY-MM-DDThh:mm:ssZ</code></td>
+      <td>most recent datestamp</td>
+      <td>Optional argument for selective harvesting, based on a specified date range. The until parameter specifies a bound interpreted as "less than or equal to".</td>
     </tr>
   </tbody>
 </table>
