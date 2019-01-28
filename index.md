@@ -892,12 +892,24 @@ https://www.rijksmuseum.nl/api/nl/usersets?key=[API_KEY]&format=json&page=2
       <td><code>0-9</code></td>
       <td>The ID of the set</td>
     </tr>
+    <tr>
+      <td><code>page</code></td>
+      <td><code>0-n</code></td>
+      <td><code>0</code></td>
+      <td>The result page to fetch</td>
+    </tr>
+    <tr>
+      <td><code>pageSize</code></td>
+      <td><code>1-100</code></td>
+      <td><code>25</code></td>
+      <td>The number of results per page</td>
+    </tr>
   </tbody>
 </table>
 
 ### Request
 ```
-https://www.rijksmuseum.nl/api/nl/usersets/1836065-meestermatches?key=fakekey&format=json
+https://www.rijksmuseum.nl/api/nl/usersets/1836065-meestermatches?key=[API_KEY]&format=json
 ```
 
 ### Response
