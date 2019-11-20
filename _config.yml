@@ -1,4 +1,11 @@
-title: Rijksmuseum API pages
+title: RijksData
+description: Documentation for Rijksmuseum data services
 markdown: kramdown
-
-theme: jekyll-theme-slate
+search_enabled: true
+remote_theme: pmarsceill/just-the-docs
+logo: "/assets/css/logo.png"
+aux_links:
+  "RijksData on www.rijksmuseum.nl":
+    - "https://www.rijksmuseum.nl/en/data"
+plugins:
+  - jekyll-redirect-from
