@@ -6,7 +6,7 @@ parent: Object metadata
 ---
 
 # Object metadata APIs
-The object metadata APIs make the power of the award-winning [Rijksmuseum website](https://www.rijksmuseum.nl) directly accessible to developers. [Searching the collection](#collection-api) through the API offers a wide range of interesting possibilities, as do the [tiled images](#collection-image-api) used to zoom in to close-ups of objects. The JSON-based service is so easy to use that you can create an application using the Rijksmuseum’s rich and [freely accessible content](https://www.rijksmuseum.nl/en/data/the-rijksmuseum-open-data-policy) in no time.
+The object metadata APIs make the power of the award-winning [Rijksmuseum website](https://www.rijksmuseum.nl) directly accessible to developers. [Searching the collection](#collection-api) through the API offers a wide range of interesting possibilities, as do the [tiled images](#collection-image-api) used to zoom in to close-ups of objects. The JSON-based service is so easy to use that you can create an application using the Rijksmuseum’s rich and [freely accessible content](https://www.rijksmuseum.nl/en/data/policy) in no time.
 
 
 ## Access to APIs
