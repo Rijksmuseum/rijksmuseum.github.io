@@ -39,7 +39,7 @@ http://library.rijksmuseum.nl:9998/biblios?version=1.1&operation=searchRetrieve&
 ```
 
 ### Example response SRU
-Responses are encoded in UTF-8 and by default formatted in [MARC21](https://www.loc.gov/marc/bibliographic/):
+Responses are encoded in UTF-8 and by default formatted in [MARCXML](https://www.loc.gov/marc/bibliographic/):
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
