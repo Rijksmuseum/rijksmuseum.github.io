@@ -9,7 +9,7 @@ parent: Bibliographic data
 The Rijksmuseum supports the [Z39.50](#z3950) and [SRU](#sru) client/server protocols for searching and retrieving bibliographic records from the library database.
 
 ## Z39.50
-`https://library.rijksmuseum.nl:9998` gives access to the biblios database with bibliographic records. The bibliographic data can be accessed by search clients supporting the [Z39.50 standard](http://www.loc.gov/z3950/agency/). A selection of the supported [Bib-1](https://www.loc.gov/z3950/agency/defns/bib1.html) attributes:
+`http://library.rijksmuseum.nl:9998` gives access to the biblios database with bibliographic records. The bibliographic data can be accessed by search clients supporting the [Z39.50 standard](http://www.loc.gov/z3950/agency/). A selection of the supported [Bib-1](https://www.loc.gov/z3950/agency/defns/bib1.html) attributes:
 
 | Code   | Attribute        |
 |:-------|:-----------------|
@@ -32,7 +32,7 @@ The Rijksmuseum supports the [Z39.50](#z3950) and [SRU](#sru) client/server prot
 | `startRecord`  | `1`-`n`                 | '1'       | skip a specified number of records in the result set                     |
 
 ### Example request SRU
-SRU supports CQL (Contextual Query Language). You can use operators like `and`, `or`. Some example search indexes are `title`, `author`, `subject`, `isbn`, `issn`, `editor`, `publisher` and `cql.serverchoice ('any')`. The following URL allows you to view the second 5 records in a search on subject containing the term rembrandt or title containing the term painting.
+SRU supports CQL (Contextual Query Language). You can use operators like `and`, `or`. Some example search indexes are `title`, `author`, `subject`, `isbn`, `issn`, `editor`, `publisher` and `cql.serverchoice` (any). The following URL allows you to view the second 5 records in a search on subject containing the term rembrandt or title containing the term painting.
 
 ```http
 http://library.rijksmuseum.nl:9998/biblios?version=1.1&operation=searchRetrieve&query=subject=rembrandt or title=painting&maximumRecords=5&startRecord=6
