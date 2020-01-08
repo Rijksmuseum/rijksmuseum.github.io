@@ -9,3 +9,4 @@ aux_links:
     - "https://www.rijksmuseum.nl/en/data"
 plugins:
   - jekyll-redirect-from
+ga_tracking: UA-155765352-1
