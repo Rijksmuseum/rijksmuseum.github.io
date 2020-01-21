@@ -27,6 +27,7 @@ The [conversion_oai_formats](https://github.com/Rijksmuseum/conversion_oai_forma
 ## Sets of objects
 The following sets of objects can be retrieved using the ListRecords and ListIdentifiers verbs:
 
+- **subject:EntireSet** All available object metadata.
 - **subject:EntirePublicDomainSet** All public domain objects.
 - **subject:PublicDomainImages** All public domain objects with an image.
 - **subject:OnDisplay** All objects currently on display in the Rijksmuseum.
