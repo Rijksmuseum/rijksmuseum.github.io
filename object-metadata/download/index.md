@@ -22,11 +22,11 @@ This download includes object metadata structured using the [Europeana Data Mode
 ## LIDO object metadata download
 [Lightweight Information Describing Objects](http://lido-schema.org) (LIDO) is an XML harvesting schema. This event-centric dataset is currently the richest object metadata that the Rijksmuseum has to offer.
 
-*[202020-rma-lido-collection.zip](https://scan.rijkskoha.nl/adlibdumps/202001-rma-lido-collection.zip)
-*[201911-rma-lido-collection.zip](https://scan.rijkskoha.nl/adlibdumps/201911-rma-lido-collection.zip)
+* [202020-rma-lido-collection.zip](https://scan.rijkskoha.nl/adlibdumps/202001-rma-lido-collection.zip)
+* [201911-rma-lido-collection.zip](https://scan.rijkskoha.nl/adlibdumps/201911-rma-lido-collection.zip)
 
 ## Comma Separated Values object metadata download
 This [Comma Separated Values](https://en.wikipedia.org/wiki/Comma-separated_values) file provides a simple inventory of objects in the Rijksmuseum collection. It includes the object number and persistent identifier, as well as a single title, type, creator, date and image URL for each object.
 
-*[202020-rma-csv-collection.zip](https://scan.rijkskoha.nl/adlibdumps/202001-rma-csv-collection.zip)
-*[201911-rma-csv-collection.zip](https://scan.rijkskoha.nl/adlibdumps/201911-rma-csv-collection.zip)
+* [202020-rma-csv-collection.zip](https://scan.rijkskoha.nl/adlibdumps/202001-rma-csv-collection.zip)
+* [201911-rma-csv-collection.zip](https://scan.rijkskoha.nl/adlibdumps/201911-rma-csv-collection.zip)
