@@ -6,7 +6,7 @@ parent: Object metadata
 ---
 
 # Download object metadata
-Downloads include all available metadata of objects in the Rijksmuseum collection. The metadata is structured in the [Dublin Core](#dublin-core-metadata-download), [Europeana Data Model](#europeana-data-model-object-metadata-download) and [LIDO](#lido-object-metadata-download). A [Comma Separated Values](#comma-separated-values-object-metadata-download) file, with the most basic metadata, is available as well. Where multiple files are offered for a schema, the latest dataset can be identified by its `YYYYMM-` prefix.
+Downloads include all available metadata of objects in the Rijksmuseum collection. The metadata is structured in the [Dublin Core](#dublin-core-metadata-download), [Europeana Data Model](#europeana-data-model-object-metadata-download) and [LIDO](#lido-object-metadata-download) schemas. A [Comma Separated Values](#comma-separated-values-object-metadata-download) file, with the most basic metadata, is available as well. Where multiple files are offered for a schema, the latest dataset can be identified by its `YYYYMM-` prefix.
 
 ## Dublin Core metadata download
 [Dublin Core](https://dublincore.org/) is a small XML vocabulary. This download provides object metadata in a simple and compact form.
