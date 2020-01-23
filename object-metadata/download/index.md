@@ -11,7 +11,7 @@ Downloads include all available metadata of objects in the Rijksmuseum collectio
 ## Dublin Core object metadata download
 [Dublin Core](https://dublincore.org/) is a small XML vocabulary. This download provides object metadata in a simple and compact form.
 
-[202020-rma-dc-collection.zip](https://scan.rijkskoha.nl/adlibdumps/202001-rma-dc-collection.zip)
+* [202020-rma-dc-collection.zip](https://scan.rijkskoha.nl/adlibdumps/202001-rma-dc-collection.zip)
 
 ## Europeana Data Model object metadata download
 This download includes object metadata structured using the [Europeana Data Model](https://pro.europeana.eu/edm-documentation). The dataset is published in the [Resource Description Framework](https://www.w3.org/TR/rdf-primer/) (RDF) format using the [Turtle](https://www.w3.org/TR/turtle/) syntax. This Linked Open Data includes many references to resources in the [controlled vocabularies](../../controlled-vocabularies).
