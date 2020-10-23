@@ -30,3 +30,8 @@ This [Comma Separated Values](https://en.wikipedia.org/wiki/Comma-separated_valu
 
 * [202020-rma-csv-collection.zip](https://scan.rijkskoha.nl/adlibdumps/202001-rma-csv-collection.zip)
 * [201911-rma-csv-collection.zip](https://scan.rijkskoha.nl/adlibdumps/201911-rma-csv-collection.zip)
+
+## Linked Art van Gogh object metadata download
+This experimental RDF dataset includes Rijksmuseum objects by van Gogh and is structured using the [Linked Art model](https://linked.art). Note the experimental nature, both the implementation of the model, as well as the use of identifiers will be subject to change.
+
+* [202010-rma-la-gogh.zip](https://scan.rijkskoha.nl/adlibdumps/202010-rma-la-gogh.zip)
