@@ -3,6 +3,7 @@ description: Documentation for Rijksmuseum data services
 markdown: kramdown
 search_enabled: true
 remote_theme: pmarsceill/just-the-docs
+color_scheme: rijksmuseum
 logo: "/assets/css/logo.png"
 aux_links:
   "RijksData on www.rijksmuseum.nl":
