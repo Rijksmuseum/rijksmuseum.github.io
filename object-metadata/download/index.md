@@ -11,27 +11,27 @@ Downloads include all available metadata of objects in the Rijksmuseum collectio
 ## Dublin Core object metadata download
 [Dublin Core](https://dublincore.org/) is a small XML vocabulary. This download provides object metadata in a simple and compact form.
 
-* [202020-rma-dc-collection.zip](https://scan.rijkskoha.nl/adlibdumps/202001-rma-dc-collection.zip)
+* [202020-rma-dc-collection.zip](https://github.com/Rijksmuseum/rijksmuseum.github.io/releases/download/1.0.0/202001-rma-dc-collection.zip)
 
 ## Europeana Data Model object metadata download
 This download includes object metadata structured using the [Europeana Data Model](https://pro.europeana.eu/edm-documentation). The dataset is published in the [Resource Description Framework](https://www.w3.org/TR/rdf-primer/) (RDF) format using the [Turtle](https://www.w3.org/TR/turtle/) syntax. This Linked Open Data includes many references to resources in the [controlled vocabularies](../../controlled-vocabularies).
 
-* [202020-rma-edm-collection.zip](https://scan.rijkskoha.nl/adlibdumps/202001-rma-edm-collection.zip)
-* [201911-rma-edm-collection.zip](https://scan.rijkskoha.nl/adlibdumps/201911-rma-edm-collection.zip)
+* [202020-rma-edm-collection.zip](https://github.com/Rijksmuseum/rijksmuseum.github.io/releases/download/1.0.0/202001-rma-edm-collection.zip)
+* [201911-rma-edm-collection.zip](https://github.com/Rijksmuseum/rijksmuseum.github.io/releases/download/1.0.0/201911-rma-edm-collection.zip)
 
 ## LIDO object metadata download
 [Lightweight Information Describing Objects](http://lido-schema.org) (LIDO) is an XML harvesting schema. This event-centric dataset is currently the richest object metadata that the Rijksmuseum has to offer.
 
-* [202020-rma-lido-collection.zip](https://scan.rijkskoha.nl/adlibdumps/202001-rma-lido-collection.zip)
-* [201911-rma-lido-collection.zip](https://scan.rijkskoha.nl/adlibdumps/201911-rma-lido-collection.zip)
+* [202020-rma-lido-collection.zip](https://github.com/Rijksmuseum/rijksmuseum.github.io/releases/download/1.0.0/202001-rma-lido-collection.zip)
+* [201911-rma-lido-collection.zip](https://github.com/Rijksmuseum/rijksmuseum.github.io/releases/download/1.0.0/201911-rma-lido-collection.zip)
 
 ## Comma Separated Values object metadata download
 This [Comma Separated Values](https://en.wikipedia.org/wiki/Comma-separated_values) file provides a simple inventory of objects in the Rijksmuseum collection. It includes the object number and persistent identifier, as well as a single title, type, creator, date and image URL for each object.
 
-* [202020-rma-csv-collection.zip](https://scan.rijkskoha.nl/adlibdumps/202001-rma-csv-collection.zip)
-* [201911-rma-csv-collection.zip](https://scan.rijkskoha.nl/adlibdumps/201911-rma-csv-collection.zip)
+* [202020-rma-csv-collection.zip](https://github.com/Rijksmuseum/rijksmuseum.github.io/releases/download/1.0.0/202001-rma-csv-collection.zip)
+* [201911-rma-csv-collection.zip](https://github.com/Rijksmuseum/rijksmuseum.github.io/releases/download/1.0.0/201911-rma-csv-collection.zip)
 
 ## Linked Art van Gogh object metadata download
 This experimental RDF dataset includes Rijksmuseum objects by van Gogh and is structured using the [Linked Art model](https://linked.art). Note the experimental nature: both the implementation of the model as well as the use of identifiers will be subject to change.
 
-* [202010-rma-la-gogh.zip](https://scan.rijkskoha.nl/adlibdumps/202010-rma-la-gogh.zip)
+* [202010-rma-la-gogh.zip](https://github.com/Rijksmuseum/rijksmuseum.github.io/releases/download/1.0.0/202010-rma-la-gogh.zip)
