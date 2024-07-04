@@ -21,9 +21,6 @@ The datasets are provided via a simple XML web service. The following metadata f
 - **edm_dc** Europeana Data Model [documentation](https://pro.europeana.eu/edm-documentation)
 - **dc** Dublin Core [documentation](https://www.dublincore.org/specifications/dublin-core/)
 
-The [conversion_oai_formats](https://github.com/Rijksmuseum/conversion_oai_formats) repository can provide insights in how Rijksmuseum data is mapped to these metadata formats.
-
-
 ## Sets of objects
 The following sets of objects can be retrieved using the ListRecords and ListIdentifiers verbs:
 
