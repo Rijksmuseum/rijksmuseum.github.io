@@ -11,4 +11,4 @@ has_toc: false
 {: .fs-1 .text-grey-dk-000 }
 
 # Bibliographic data
-The metadata of the [Rijksmuseum Research Library](https://library.rijksmuseum.nl) is available through two [APIs](./api).
+The metadata of the [Rijksmuseum Research Library](https://library.rijksmuseum.nl) is available through the [SRU API](./api).

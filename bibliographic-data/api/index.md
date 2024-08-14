@@ -6,22 +6,7 @@ parent: Bibliographic data
 ---
 
 # Bibliographic data APIs
-The Rijksmuseum supports the [Z39.50](#z3950) and [SRU](#sru) client/server protocols for searching and retrieving bibliographic records from the library database.
-
-## Z39.50
-`http://library.rijksmuseum.nl:9998` gives access to the biblios database with bibliographic records. The bibliographic data can be accessed by search clients supporting the [Z39.50 standard](http://www.loc.gov/z3950/agency/). A selection of the supported [Bib-1](https://www.loc.gov/z3950/agency/defns/bib1.html) attributes:
-
-| Code   | Attribute        |
-|:-------|:-----------------|
-| `1`    | Personal-name    |
-| `4`    | Title            |
-| `7`    | ISBN             |
-| `8`    | ISSN             |
-| `21`   | Subject          |
-| `31`   | Publication date |
-| `1003` | Author           |
-| `1016` | Any              |
-
+The Rijksmuseum supports the [SRU](#sru) client/server protocol for searching and retrieving bibliographic records from the library database.
 
 ## SRU
 `http://library.rijksmuseum.nl:9998/biblios?version=1.1&operation=searchRetrieve&maximumRecords=20&query=[QUERY]` gives access to bibliographic data via search clients that support the [SRU standard](http://www.loc.gov/standards/sru/).
